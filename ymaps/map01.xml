@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ym:ymaps xmlns:ym="http://maps.yandex.ru/ymaps/1.x">
+    <Representation xmlns="http://maps.yandex.ru/representation/1.x"
+        xmlns:gml="http://www.opengis.net/gml">
+        <View>
+            <boundedBy xmlns="http://www.opengis.net/gml">
+                <Envelope>
+                    <lowerCorner>35.057285924194 66.280272976488</lowerCorner>
+                    <upperCorner>37.450585 67.980985793255</upperCorner>
+                </Envelope>
+            </boundedBy>
+        </View>
+        <Style gml:id="userobject">
+            <iconStyle>
+                <template>#placemark</template>
+            </iconStyle>
+            <balloonContentStyle>
+                <template>#balloon</template>
+            </balloonContentStyle>
+        </Style>
+        <Template gml:id="placemark">
+            <text>&lt;img
+                src="http://api-maps.yandex.ru/i/0.3/micro/pm$[metaDataProperty.AnyMetaData.icon]s.png"
+                width="28" heigh="29"/&gt;&lt;font
+                style="font-weight:bold;position:relative;z-index:4;top:-32px;display:block;width:22px;text-align:center"
+                color="$[metaDataProperty.AnyMetaData.color]"&gt;$[metaDataProperty.AnyMetaData.number]&lt;/font&gt;</text>
+        </Template>
+        <Template gml:id="balloon">
+            <text>&lt;div
+                style="max-width:400px;*width:400px;"&gt;&lt;strong&gt;$[name]&lt;/strong&gt;&lt;div&gt;$[description]&lt;/div&gt;</text>
+        </Template>
+    </Representation>
+    <ym:GeoObjectCollection xmlns="http://www.opengis.net/gml">
+        <featureMembers>
+            <ym:GeoObject>
+                <metaDataProperty>
+                    <ym:AnyMetaData>
+                        <ym:number>1</ym:number>
+                        <ym:icon>or</ym:icon>
+                        <ym:color>black</ym:color>
+                    </ym:AnyMetaData>
+                </metaDataProperty>
+                <name>Ловозеро</name>
+                <description>"Семерка"</description>
+                <Point>
+                    <pos>35.05728592419434 67.98098579325472</pos>
+                </Point>
+            </ym:GeoObject>
+            <ym:GeoObject>
+                <metaDataProperty>
+                    <ym:AnyMetaData>
+                        <ym:number>2</ym:number>
+                        <ym:icon>or</ym:icon>
+                        <ym:color>black</ym:color>
+                    </ym:AnyMetaData>
+                </metaDataProperty>
+                <name>Поселок Варзуга</name>
+                <description>Заброска на машине и вертолете (911) 342-17-94, Андрей</description>
+                <Point>
+                    <pos>36.58981169213869 66.39685993783169</pos>
+                </Point>
+            </ym:GeoObject>
+            <ym:GeoObject>
+                <metaDataProperty>
+                    <ym:AnyMetaData>
+                        <ym:number>4</ym:number>
+                        <ym:icon>or</ym:icon>
+                        <ym:color>black</ym:color>
+                    </ym:AnyMetaData>
+                </metaDataProperty>
+                <name>Стрельна</name>
+                <description>Окончание волока<br/><span style="color:gray">E37.449326 N66.881203</span><br/><img src="http://img-fotki.yandex.ru/get/25/101174408.4/0_64d74_33a94dd3_M"/></description>
+                <Point>
+                    <pos>37.449326 66.881203</pos>
+                </Point>
+            </ym:GeoObject>
+            <ym:GeoObject>
+                <metaDataProperty>
+                    <ym:AnyMetaData>
+                        <ym:number>3</ym:number>
+                        <ym:icon>or</ym:icon>
+                        <ym:color>black</ym:color>
+                    </ym:AnyMetaData>
+                </metaDataProperty>
+                <name>Большая Варзуга</name>
+                <description>Начало волока<br/><span style="color:gray">E37.409649 N66.880669</span></description>
+                <Point>
+                    <pos>37.409649 66.880669</pos>
+                </Point>
+            </ym:GeoObject>
+            
+        </featureMembers>
+        <name>Кола 2011. Ловозеро-Стрельна</name>
+        <ym:style>#userobject</ym:style>
+    </ym:GeoObjectCollection>
+</ym:ymaps>

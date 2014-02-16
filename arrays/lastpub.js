@@ -1,0 +1,15 @@
+document.write('<div id="last-published">');
+document.write('  <h3>Последние публикации:</h3>');
+document.write('  <ul>');
+document.write('	<li class="first"><img src="images/newpub.gif" width="32" height="32"/>');
+document.write('	  <a href="kola2013.html">Восточная Лица</a><br/>16.8.2013</li>');
+document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
+document.write('	  <a href="sozz.html">Созь</a><br/>27.5.2013</li>');
+document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
+document.write('	  <a href="pola2012.html">Поля</a><br/>11.11.2012</li>');
+document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
+document.write('	  <a href="vuoksa2012.html">Вуокса</a><br/>16.9.2012</li>');
+document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
+document.write('	  <a href="kola2012.html">Йоканьга</a><br/>25.8.2012</li>');
+document.write('  </ul>');
+document.write('</div>');
