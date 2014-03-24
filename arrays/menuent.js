@@ -22,6 +22,7 @@ menu2ent[15]='<a href="polomet.html">Полометь</a>';
 menu2ent[16]='<a href="vuoksa2012.html">Вуокса 2012</a>';
 menu2ent[17]='<a href="pola2012.html">Поля</a>';
 menu2ent[18]='<a href="sozz.html">Созь</a>';
+menu2ent[19]='<a href="shana.html">Шаня</a>';
 
 //Menu entries for kola.dita
 var menu3ent=new Array();
