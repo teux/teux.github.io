@@ -25,15 +25,15 @@ menu2ent[18]='<a href="sozz.html">Созь</a>';
 menu2ent[19]='<a href="shana.html">Шаня</a>';
 menu2ent[20]='<a href="mossea14.html">Московское море</a>';
 menu2ent[21]='<a href="onega.html">Онежское озеро</a>';
-menu2ent[22]='<a href="ladoga.html">Ладога '12</a>';
-menu2ent[23]='<a href="ladoga14.html">Ладога '14</a>';
-menu2ent[24]='<a href="kildin.html">Кильдин (план)</a>';
+menu2ent[22]='<a href="ladoga.html">Ладога 2012</a>';
+menu2ent[23]='<a href="ladoga14.html">Ладога 2014</a>';
 
 //Menu entries for kola.dita
 var menu3ent=new Array();
 menu3ent[0]='<a href="kola2011.html">Стрельна</a>';
 menu3ent[1]='<a href="kola2012.html">Йоканьга</a>';
 menu3ent[2]='<a href="kola2013.html">Восточная Лица</a>';
+menu3ent[3]='<a href="kildin.html">Кильдин</a>';
 
 //Menu entries for afoot.dita
 var menu4ent=new Array();
