@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="ru">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="stylesheet" href="static/css/styles.css" />
+        <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+        <title>Tasks - Today</title>
+    </head>
+    <body>
+        <div class="header dashbord">
+            <div class="hd_left">
+                <h1>Today</h1>
+                <a id="hd_period" href="#"> </a>
+            </div>
+            <div class="hd_right">
+                <div class="us_pixmap"
+                    style="background:url(static/img/pixmap.png) no-repeat center center;"></div>
+                <div class="us_name">Eddie Lobanovsky</div>
+                <div class="us_depart">Two Solid</div>
+            </div>
+        </div>
+        <div class="wrapper dashbord constraint">
+            <!--column 1-->
+            <div class="dash_col1">
+                <div class="gnav">
+                    <h1>Tasks</h1>
+                    <div>
+                        <a class="gn_button gn_edit" id="dash_edit" href="#">Edit</a>
+                    </div>
+                    <div>
+                        <a class="gn_button gn_other" id="dash_more" href="#">More</a>
+                    </div>
+                </div>
+                <!--task filter-->
+                <!--<div class="toolbox cnt_tools">
+                    <div class="cnt_begin">
+                        <span class="label">A-Z</span>
+                        <a id="cnt_sortord" href="#">A,B,C</a>
+                    </div>
+                    <div>
+                        <span class="label">Search for</span>
+                        <div class="cnt_filter">
+                            <input id="cnt_filter" type="text"
+                                placeholder="What are you looking for?" />
+                            <a id="cnt_filtclean" href="#"></a>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="taskfilter">
+                    <div class="tf_control">
+                        <span class="label">due by</span>
+                        <a id="dash_date" href="#">21 September 2012</a>
+                    </div>
+                    <div class="tf_control">
+                        <span class="label">search for</span>
+                        <input id="dash_search" type="text" placeholder="Amiga Corporation" />
+                    </div>
+                </div>
+                <!--task list-->
+                <div class="tasklist scrollout">
+                    <div class="scrollmask">
+                        <div class="viewport">
+                            <div class="tl_content tl_high">
+                                <div class="tl_hcap">
+                                    <span class="tl_hlabel">high priority</span>
+                                </div>
+                                <div class="tl_htask first">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Design concept</span> Amiga
+                                        Corporation / Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 18</span>1 day </div>
+                                </div>
+                                <div class="tl_htask">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Premium Plan Page</span> Amiga
+                                        Corporation / Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 18</span>1 day </div>
+                                </div>
+                            </div>
+                            <div class="tl_content tl_medium">
+                                <div class="tl_mcap">
+                                    <span class="tl_mlabel">medium priority</span>
+                                </div>
+                                <div class="tl_mtask first">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Contact form</span> Amiga Corporation
+                                        / Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 19</span>2 days </div>
+                                </div>
+                                <div class="tl_mtask">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Email form</span> Amiga Corporation /
+                                        Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 19</span>2 days </div>
+                                </div>
+                                <div class="tl_mtask">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Our Services</span> Amiga Corporation
+                                        / Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 20</span>2 days </div>
+                                </div>
+                                <div class="tl_mtask">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Mobile and Ipad Illustration</span>
+                                        Amiga Corporation / Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 20</span>2 days </div>
+                                </div>
+                                <div class="tl_mtask last">
+                                    <div class="tl_info">
+                                        <span class="tl_name">Home page</span> Amiga Corporation /
+                                        Corporate website redesign </div>
+                                    <div class="tl_when">
+                                        <span class="tl_date">Tue, Sep 21</span>2 days </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--column 2-->
+            <div class="dash_col2">
+                <!--navigation-->
+                <div class="gnav">
+                    <h1>Timeline</h1>
+                    <div>
+                        <a class="gn_button gn_add" id="dash_add" href="#">Add</a>
+                    </div>
+                </div>
+                <!--time meter-->
+                <div class="timetr">
+                    <div class="tm_info">
+                        <div class="tm_task">
+                            <span class="tm_label">currently working on</span>
+                            <span id="tm_task">Navigation Illustrations (Corporate Website
+                                Redesign)</span>
+                        </div>
+                        <div class="tm_progress">
+                            <span class="tm_label">working time</span>
+                            <span id="tm_progress">2h 38m 52s</span>
+                        </div>
+                        <div class="tm_total">
+                            <span class="tm_label">total time for today</span>
+                            <span id="tm_total">5h 57m 14s</span>
+                        </div>
+                    </div>
+                    <div class="tm_control">
+                        <a id="dash_pause" class="tm_button" href="#">pause</a>
+                        <a id="dash_done" class="tm_button" href="#">done</a>
+                    </div>
+                </div>
+                <!--timeline-->
+                <div class="timeline scrollout">
+                    <div class="scrollmask">
+                        <div class="viewport">
+                            <div class="taskbox active">
+                                <div class="tb_descr">
+                                    <div class="tb_fill">
+                                        <span class="tb_label">appointment with</span>
+                                        <span class="tb_task">Gary Oldman at Starbucks</span>
+                                        <span class="tb_label">remaining time</span>
+                                        <span class="tb_remain">1h 24m 34s</span>
+                                    </div>
+                                </div>
+                                <div class="tb_ico pin"></div>
+                                <div class="tb_time">11:25 am</div>
+                            </div>
+                            <div class="taskbox">
+                                <div class="tb_time">12:56 am</div>
+                                <div class="tb_ico kpk"></div>
+                                <div class="tb_descr">
+                                    <div class="tb_fill">
+                                        <span class="tb_label">call to</span>
+                                        <span class="tb_task">Jane Brown</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="taskbox">
+                                <div class="tb_descr">
+                                    <div class="tb_fill">
+                                        <span class="tb_label">call to</span>
+                                        <span class="tb_task">Maric Borac</span>
+                                    </div>
+                                </div>
+                                <div class="tb_ico kpk"></div>
+                                <div class="tb_time">1:15 pm</div>
+                            </div>
+                            <div class="taskbox">
+                                <div class="tb_time">1:35 pm</div>
+                                <div class="tb_ico pin"></div>
+                                <div class="tb_descr">
+                                    <div class="tb_fill">
+                                        <span class="tb_label">appointment with</span>
+                                        <span class="tb_task">Mick Black</span>
+                                        <span class="tb_label">remaining time</span>
+                                        <span class="tb_remain">1h 24m 34s</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="dashbord">
+                <div class="gradient"> </div>
+                <div class="gradient"> </div>
+            </div>
+        </footer>
+    </body>
+</html>

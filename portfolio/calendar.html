@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="ru">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="stylesheet" href="static/css/styles.css" />
+        <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+        <title>Calendar - Today</title>
+    </head>
+    <body>
+        <div class="header calendar">
+            <div class="hd_left">
+                <h1>Calendar</h1>
+                <a id="hd_period" href="#"> </a>
+            </div>
+            <div class="hd_right">
+                <div class="us_pixmap"
+                    style="background:url(static/img/pixmap.png) no-repeat center center;"></div>
+                <div class="us_name">Eddie Lobanovsky</div>
+                <div class="us_depart">Two Solid</div>
+            </div>
+        </div>
+        <div class="wrapper calendar constraint">
+            <div class="cal_col">
+                <div class="gnav">
+                    <h1>My Calendar</h1>
+                    <div>
+                        <a class="gn_button gn_add" id="cal_add" href="#">Add Event</a>
+                    </div>
+                    <div>
+                        <a class="gn_button gn_sync" id="cal_sync" href="#">Sync</a>
+                    </div>
+                    <div>
+                        <a class="gn_button gn_other" id="cal_all" href="#">All Calendars</a>
+                    </div>
+                </div>
+                <!--tollbox-->
+                <div class="toolbox cal_tools">
+                    <div>
+                        <span class="label">Date</span>
+                        <a class="ct_date" id="cal_date" href="#">20 November 2012</a>
+                    </div>
+                    <div>
+                        <span class="label">View</span>
+                        <div class="ct_radgroup">
+                            <a class="ct_radbut active" id="cal_day" href="#">
+                                <span class="ct_bord_sqr"><i></i></span>Day</a>
+                            <a class="ct_radbut" id="cal_week" href="#">
+                                <span class="ct_bord_sqr"><u></u></span>Week</a>
+                            <a class="ct_radbut" id="cal_month" href="#">
+                                <span class="ct_bord_sqr"><u></u><u></u><u></u></span>Month</a>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="label">Orientation</span>
+                        <div class="ct_radgroup">
+                            <a class="ct_radbut active" id="cal_hor" href="#">
+                                <span class="ct_bord_hor"></span>Horizontal</a>
+                            <a class="ct_radbut" id="cal_ver" href="#">
+                                <span class="ct_bord_ver"></span>Vertical</a>
+                        </div>
+                    </div>
+                </div>
+                <!--hours-->
+                <div class="calhours c3_layout">
+                    <div class="c3_begin">
+                        <div class="c3_left">
+                            <span class="ch_label">Person</span>
+                        </div>
+                        <div class="c3_middle">
+                            <span class="hour_label">9 AM</span>
+                            <span class="hour_label">10</span>
+                            <span class="hour_label">11</span>
+                            <span class="hour_label">12</span>
+                            <span class="hour_label">1 PM</span>
+                            <span class="hour_label">2</span>
+                            <span class="hour_label">3</span>
+                        </div>
+                    </div>
+                    <div class="c3_right">
+                        <span class="hour_label">4-9</span>
+                    </div>
+                </div>
+                <!-- Meeting list -->
+                <div class="persons scrollout">
+                    <div class="scrollmask">
+                        <div class="viewport">
+                            <!--time grid-->
+                            <div class="timegreed c3_layout">
+                                <div class="c3_begin">
+                                    <div class="c3_left"></div>
+                                    <div class="c3_middle">
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                        <div class="hour_block"></div>
+                                    </div>
+                                </div>
+                                <div class="c3_right"></div>
+                            </div>
+                            <!--person 1-->
+                            <div class="person c3_layout">
+                                <div class="c3_begin">
+                                    <div class="ps_account c3_left">
+                                        <div class="ps_avtr">
+                                            <img class="ps_pixmap" src="static/img/adam.png"
+                                                alt="Adam Ericsson" />
+                                        </div>
+                                        <div class="ps_data">
+                                            <div class="ps_user">
+                                                <span class="ps_username">Adam Ericsson</span>
+                                            </div>
+                                            <div class="ps_evnum">6 events sheduled</div>
+                                            <div class="ps_details">
+                                                <span class="ps_phone">(646) 861-2253</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting c3_middle">
+                                        <div class="mt_block">
+                                            <div class="mt_detail"
+                                                style="width:15%; margin-left: 1%;">
+                                                <span class="mt_time">9:10 AM</span>
+                                                <span class="mt_name">Call To...</span>
+                                            </div>
+                                            <div class="mt_detail" style="width:30%;">
+                                                <span class="mt_time">10:25 AM</span>
+                                                <span class="mt_name">Meeting with Dann</span>
+                                                <span class="mt_pin mt_blue"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:30%;">
+                                                <span class="mt_time">11:10 AM</span>
+                                                <span class="mt_name">Meeting with Carol</span>
+                                                <span class="mt_pin mt_magen"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail mt_violet"
+                                                style="margin-left:55%;">
+                                                <span class="mt_time">1:00 PM</span>
+                                                <span class="mt_name">Annual report with CEO in
+                                                  Conference Room</span>
+                                                <span class="mt_pin mt_magen"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--person 2-->
+                            <div class="person c3_layout">
+                                <div class="c3_begin">
+                                    <div class="ps_account c3_left">
+                                        <div class="ps_avtr">
+                                            <img class="ps_pixmap" src="static/img/nadin.png"
+                                                alt="Adam Ericsson" />
+                                        </div>
+                                        <div class="ps_data">
+                                            <div class="ps_user">
+                                                <span class="ps_username">Nadin Sovien</span>
+                                            </div>
+                                            <div class="ps_evnum">4 events sheduled</div>
+                                            <div class="ps_details">
+                                                <span class="ps_phone">(568) 256-1287</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting c3_middle">
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="width:67%;">
+                                                <span class="mt_time">9:05 AM</span>
+                                                <span class="mt_name">Microsoft work</span>
+                                                <span class="mt_blue_"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:70%;width:25%">
+                                                <span class="mt_time">2:00 PM</span>
+                                                <span class="mt_name">Call To J. Takerman</span>
+                                                <span class="mt_magen_" style="dispaly:none;"
+                                                ></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:1000px;">
+                                                <span class="mt_time">1:00 PM</span>
+                                                <span class="mt_name">Annual report with CEO in
+                                                  Conference Room</span>
+                                                <span class="mt_magen_"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--person 3-->
+                            <div class="person c3_layout">
+                                <div class="c3_begin">
+                                    <div class="ps_account c3_left">
+                                        <div class="ps_avtr">
+                                            <img class="ps_pixmap" src="static/img/irene.png"
+                                                alt="Adam Ericsson" />
+                                        </div>
+                                        <div class="ps_data">
+                                            <div class="ps_user">
+                                                <span class="ps_username">Irene Sparkly</span>
+                                            </div>
+                                            <div class="ps_details">
+                                                <span class="ps_phone">(568) 256-5832</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting mt_noevents c3_middle"> NO EVENT
+                                        SCHEDULED DURING THIS DAY </div>
+                                </div>
+                            </div>
+                            <!--person 4-->
+                            <div class="person c3_layout">
+                                <div class="c3_begin">
+                                    <div class="ps_account c3_left">
+                                        <div class="ps_avtr">
+                                            <img class="ps_pixmap" src="static/img/yura.png"
+                                                alt="Adam Ericsson" />
+                                        </div>
+                                        <div class="ps_data">
+                                            <div class="ps_user">
+                                                <span class="ps_username">Yura Yarokhovich</span>
+                                            </div>
+                                            <div class="ps_evnum">13 events sheduled</div>
+                                            <div class="ps_details">
+                                                <span class="ps_phone">(568) 569-9851</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="meeting c3_middle">
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:1%;width:25%;">
+                                                <span class="mt_time">9:10 AM</span>
+                                                <span class="mt_name">Microsoft work</span>
+                                                <span class="mt_magen" style="dispaly:none;"></span>
+                                            </div>
+                                            <div class="mt_detail">
+                                                <span class="mt_time">11:0 AM</span>
+                                                <span class="mt_name">Connect SQL DB</span>
+                                                <span class="mt_blue"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:35%;">
+                                                <span class="mt_time">11:15 AM</span>
+                                                <span class="mt_name">Call to John</span>
+                                                <span class="mt_green"></span>
+                                            </div>
+                                        </div>
+                                        <div class="mt_block">
+                                            <div class="mt_detail" style="margin-left:55%;">
+                                                <span class="mt_time">1:00 PM</span>
+                                                <span class="mt_name">Annual report with CEO in
+                                                  Conference Room</span>
+                                                <span class="mt_magen"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--scrollbars-->
+                <div class="scrollright">
+                    <a id="scrollright" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="calendar">
+                <div class="gradient"></div>
+            </div>
+        </footer>
+    </body>
+</html>

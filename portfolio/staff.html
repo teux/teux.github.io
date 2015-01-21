@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="ru">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <link rel="stylesheet" href="static/css/styles.css" />
+<!--        <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">-->
+        <!--[if gte IE 9]><style type="text/css">.gradient {filter: none;}</style><![endif]-->
+        <script src=""></script>
+        <script src="static/js/jquery-1.9.1.min.js"></script>
+        <script src="static/js/staff.js"></script>
+        <title>Staff</title>
+    </head>
+    <body>
+        <div class="header staf">
+            <div class="hd_left">
+                <h1>Staff</h1>
+                <a id="hd_period" href="#"> </a>
+            </div>
+            <div class="hd_right">
+                <div class="us_pixmap"
+                    style="background:url(static/img/pixmap.png) no-repeat center center;"></div>
+                <div class="us_name">Eddie Lobanovsky</div>
+                <div class="us_depart">Two Solid</div>
+            </div>
+        </div>
+        <div class="wrapper staf">
+            <!--column 1-->
+            <div class="cnt_col1">
+                <div class="gnav">
+                    <h1>View</h1>
+                    <div>
+                        <a class="gn_button" id="cnt_viewadd" href="#">Add</a>
+                    </div>
+                </div>
+                <!--breadcrumbs-->
+                <div id="breadcrumbs">
+                    <a class="bc_link bc_homemo" id="0">Группа компаний «Еврохим»</a>
+                    <a class="bc_link" id="2">ОАО Минерально-химическая компания ЕвроХим</a>
+                    <a class="bc_link" id="3">Административная дирекция</a>
+                </div>
+                <!--<div class="breadcrumbs">
+                                <a class="bc_link bc_homem" href="#">Еврохим</a>
+                                <div class="bc_tab">
+                                    <a class="bc_link bc_shiftm" href="#">Московский офис</a>
+                                    <div class="bc_tab">
+                                        <a class="bc_link bc_shiftm" href="#">Дирекция информационных решений</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="breadcrumbs">
+                                <a class="bc_link bc_homem2" href="#">Еврохим</a>
+                                <a class="bc_link bc_down1" href="#">Московский офис</a>
+                                <a class="bc_link bc_down1" href="#">Дирекция информационных решений</a>
+                            </div>
+                            <div class="breadcrumbs">
+                                <a class="bc_link bc_homem2" href="#">Еврохим</a>
+                                <div class="bc_tab">
+                                    <a class="bc_link bc_shift" href="#">Московский офис</a>
+                                    <div class="bc_tab">
+                                        <a class="bc_link bc_shift" href="#">Дирекция информационных решений</a>
+                                    </div>
+                                </div>
+                            </div>-->
+                
+                <!--Departments-->
+                <div class="deps scrollout">
+                    <div class="scrollmask">
+                        <div class="viewport">
+                            <div id="deplist">
+                                <a class="dep_link" id="2">Московский офис<span class="dp_vol">90</span></a>
+                                <div class="dep_shift" style="display:none">
+                                    <a class="dep_link" id="3">Дирекция информационных решений<span class="dp_vol">199</span></a>
+                                </div>
+                                <a class="dep_link" id="4">Department A<span class="dp_vol">199</span></a>
+                                <a class="dep_link" id="5">Department B<span class="dp_vol">199</span></a>
+                                <div class="dep_shift">
+                                    <a class="dep_link" id="9">Department department department B.1<span class="dp_vol">199</span></a>
+                                    <a class="dep_link" id="10">Department B.2<span class="dp_vol">199</span></a>
+                                    <a class="dep_link" id="11">Department B.3<span class="dp_vol">199</span></a>
+                                </div>
+                                <a class="dep_link" id="12">Department C<span class="dp_vol">199</span></a>
+                                <a class="dep_link" id="6">Department D<span class="dp_vol">199</span></a>
+                                <a class="dep_link active" id="8">Department D.2<span class="dp_vol">199</span></a>
+                                <div class="dep_shift" style="display:none;">
+                                    <a class="dep_link" id="7">Department D.1<span class="dp_vol">199</span></a>
+                                    <a class="dep_link" id="13">Department D.3<span class="dp_vol">199</span></a>
+                                </div>
+                               <a class="dep_link" id="14">Department E<span class="dp_vol">199</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--column 2-->
+            <div class="cnt_col2">
+                <div class="gnav">
+                    <h1>Active Contacts</h1>
+                    <div>
+                        <a class="gn_button gn_add" id="cnt_add">Add</a>
+                    </div>
+                </div>
+                <!--tollbox-->
+                <div class="toolbox cnt_tools">
+                    <div class="cnt_begin">
+                        <span class="label">A-Z</span>
+                        <a id="cnt_sortord">A,B,C</a>
+                    </div>
+                    <div>
+                        <span class="label">Search for</span>
+                        <div class="cnt_filter">
+                            <input id="cnt_filter" type="text"
+                                placeholder="What are you looking for?" />
+                            <a id="cnt_filtclean"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--caption-->
+                <div class="concaption">
+                    <div class="cc_begin">
+                        <h1>Filtered results <span class="cl_num">34</span></h1>
+                    </div>
+                    <div class="cc_end">
+                        <a class="cc_button" id="con_act1">Action 1</a>
+                        <a class="cc_button" id="con_act2">Action 2</a>
+                    </div>
+                </div>
+                <!--contact list-->
+                <div class="contacts scrollout">
+                    <div class="scrollmask">
+                        <div class="viewport">
+                            <!--contact-->
+                            <div class="c2_layout">
+                                <div class="ps_account c2_left">
+                                    <div class="ps_avtr">
+                                        <img class="ps_pixmap" src="static/img/adam.png"
+                                            alt="Adam Ericsson" />
+                                    </div>
+                                    <div class="ps_data">
+                                        <div class="ps_user">
+                                            <span class="ps_username">Adam Ericsson</span>
+                                            <span>Smith corporation</span>
+                                        </div>
+                                        <div class="ps_details">
+                                            <span class="ps_phone">(646) 861-2253</span>
+                                            <span class="ps_mail">a.erricson@corporation.com</span>
+                                        </div>
+                                        <div class="ps_details">
+                                            <span class="ps_phone">(646) 861-2253</span>
+                                            <span class="ps_mail">a.erricson@corporation.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c2_right">
+                                    <span class="ps_birthday">02.07.1975</span>
+                                </div>
+                            </div>
+                            <!--contact-->
+                            <div class="c2_layout">
+                                <div class="ps_account c2_left">
+                                    <div class="ps_avtr">
+                                        <img class="ps_pixmap" src="static/img/adam.png"
+                                            alt="Adam Ericsson" />
+                                    </div>
+                                    <div class="ps_data">
+                                        <div class="ps_user">
+                                            <span class="ps_username">Adam Ericsson</span>
+                                            <span>Smith corporation</span>
+                                        </div>
+                                        <div class="ps_details">
+                                            <span class="ps_phone">(646) 861-2253</span>
+                                            <span class="ps_mail">a.erricson@corporation.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c2_right">
+                                    <span class="ps_birthday">02.07.1975</span>
+                                </div>
+                            </div>
+                            <!--contact-->
+                            <div class="c2_layout">
+                                <div class="ps_account c2_left">
+                                    <div class="ps_avtr">
+                                        <img class="ps_pixmap" src="static/img/nadin.png"
+                                            alt="Adam Ericsson" />
+                                    </div>
+                                    <div class="ps_data">
+                                        <div class="ps_user">
+                                            <span class="ps_username">Nadin Sovien</span>
+                                        </div>
+                                        <div class="ps_details">
+                                            <span class="ps_phone">(568) 256-1287</span>
+                                            <span class="ps_mail">a.erricson@corporation.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c2_right">
+                                    <span class="ps_birthday">02.07.1975</span>
+                                </div>
+                            </div>
+                            <!--contact-->
+                            <div class="c2_layout">
+                                <div class="ps_account c2_left">
+                                    <div class="ps_avtr">
+                                        <img class="ps_pixmap" src="static/img/irene.png"
+                                            alt="Adam Ericsson" />
+                                    </div>
+                                    <div class="ps_data">
+                                        <div class="ps_user">
+                                            <span class="ps_username">Irene Sparkly</span>
+                                        </div>
+                                        <div class="ps_details">
+                                            <span class="ps_phone">(568) 256-5832</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="c2_right">
+                                    <span class="ps_birthday">02.07.1975</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="staf">
+                <div class="gradient"></div>
+            </div>
+        </footer>
+    </body>
+</html>
