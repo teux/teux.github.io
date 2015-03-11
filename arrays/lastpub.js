@@ -6,7 +6,7 @@ document.write('	  <a href="kildin.html">Кильдин</a><br/>6.6.2014</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
 document.write('	  <a href="ladoga14.html">Ладожское озеро</a><br/>28.5.2014</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
-document.write('	  <a href="ladoga.html">Ладожское озеро. Валаам</a><br/>23.5.2014</li>');
+document.write('	  <a href="ladoga.html">Ладожское оз. Валаам</a><br/>23.5.2014</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
 document.write('	  <a href="onega.html">Онежское озеро. Кижи</a><br/>30.4.2014</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
