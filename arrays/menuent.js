@@ -34,6 +34,7 @@ menu3ent[0]='<a href="kola2011.html">Стрельна</a>';
 menu3ent[1]='<a href="kola2012.html">Йоканьга</a>';
 menu3ent[2]='<a href="kola2013.html">Восточная Лица</a>';
 menu3ent[3]='<a href="kildin.html">Кильдин</a>';
+menu3ent[4]='<a href="rybachiy.html">Рыбачий</a>';
 
 //Menu entries for afoot.dita
 var menu4ent=new Array();
