@@ -59,12 +59,13 @@ menu6ent[0]='<a href="lapland.html">Лапландия</a>';
 
 //Menu entries for camping.dita
 var menu7ent=new Array();
-menu7ent[0]='<a href="knp.html">Кенозерский парк</a>';
-menu7ent[1]='<a href="skitul2009.html">Скитулец 2009</a>';
-menu7ent[2]='<a href="borki-liza.html">Лиза в Борках</a>';
-menu7ent[3]='<a href="ohvat.html">Отдых на озере Охват</a>';
-menu7ent[4]='<a href="mossea09.html">Московское море</a>';
-menu7ent[5]='<a href="evila.html">Тур по Европе (Валентина Сергеевна)</a>';
+menu7ent[0]='<a href="wish.html">Желания</a>';
+menu7ent[1]='<a href="knp.html">Кенозерский парк</a>';
+menu7ent[2]='<a href="skitul2009.html">Скитулец 2009</a>';
+menu7ent[3]='<a href="borki-liza.html">Лиза в Борках</a>';
+menu7ent[4]='<a href="ohvat.html">Отдых на озере Охват</a>';
+menu7ent[5]='<a href="mossea09.html">Московское море</a>';
+menu7ent[6]='<a href="evila.html">Тур по Европе (Валентина Сергеевна)</a>';
 
 //Menu entries for usefull.dita
 var menu8ent=new Array();

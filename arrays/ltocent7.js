@@ -1,5 +1,6 @@
 //Local TOC for camping.dita
 var TITEMS = [
+  ["Желания", "wish.html", "11"],
   ["Кенозерский парк", "knp.html", "1", 
     ["Охотничья заимка", "lekshmozero.html", "11"],
     ["Кенозеро", "kenozero.html", "11"]
