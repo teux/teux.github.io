@@ -13,5 +13,7 @@ var TITEMS = [
     ["Отчет", "kola2013.story.html", "11"]
   ],
   ["Кильдин", "kildin.html", "11"],
-  ["Рыбачий", "rybachiy.html", "11"]
+  ["Рыбачий", "rybachiy.html", "1", 
+    ["Фотографии", "rybachiy.photo.html", "11"]
+  ]
 ];
