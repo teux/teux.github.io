@@ -1,200 +1,51 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="ru-ru">
-
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Подготовка карты в Google Earth</title>
-    <meta name="keywords" content="Андрей Коперский, фотоальбом, ">
-    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">
-    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="arrays/menuent.js"></script>
-    <script type="text/javascript" src="scripts/ltoc.js"></script>
-    <script type="text/javascript">
+<html lang="ru-ru">  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        <title>Подготовка карты в Google Earth</title>    <meta name="keywords" content="Андрей Коперский, фотоальбом, ">    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">    <link rel="shortcut icon" href="images/favicon.ico">    <script type="text/javascript" src="scripts/jquery.min.js"></script>    <script type="text/javascript" src="scripts/main.js"></script>    <script type="text/javascript" src="scripts/menu.js"></script>    <script type="text/javascript" src="arrays/menuent.js"></script>    <script type="text/javascript" src="scripts/ltoc.js"></script>    <script type="text/javascript">
 			  $(document).ready(function(){
 				  $("a[rel='cbgroup']").colorbox({transition:"elastic", speed:"700", current:"фото {current} из {total}", width:"70%"});
 				  $("a[rel='slideshow']").colorbox({slideshow:"true", slideshowAuto:"true", slideshowSpeed:"4000", slideshowStart:"Начать показ", slideshowStop:"Остановить показ", current:"фото {current} из {total}", width:"70%"});
 			  });
-		  </script>
-    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
-    <script type="text/javascript" src="arrays/ltocent8.js"></script>
-    <script type="text/JavaScript">window.pageid = "dakota.maps.google.html";</script>
-    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">
-  </head>
-
-
-
-  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="id107AC800IY4">
-    <div id="container">
-      <div id="branding">
-        <h1>
-          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>
-          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>
-        </h1>
-        <p>Фотографии походов, приглашаю в поход</p>
-      </div>
-      <div id="navigation_main">
-        <ul>
-          <li class="first">
-            <a href="index.html">Походы</a>
-          </li>
-          <li>
-            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>
-          </li>
-          <li>
-            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>
-          </li>
-          <li>
-            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>
-          </li>
-          <li>
-            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>
-          </li>
-          <li>
-            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>
-          </li>
-          <li>
-            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>
-          </li>
-          <li class="current">
-            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>
-          </li>
-        </ul>
-      </div>
-      <div id="tools">
-        <h3>Page Tools</h3>
-        <ul id="page_tools">
-          <li id="search">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">
-              <input type="hidden" name="sitesearch" value="teux.ru">
-              <input id="search_button" type="submit" value="&gt;">
-            </form>
-          </li>
-        </ul>
-      </div>
-      <div id="dashboard">
-        <div id="navigation_secondary">
-          <p class="title">Разделы:</p>
-          <div id="ltoc">
-            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>
-          </div>
-        </div>
-        <script type="text/javascript" src="arrays/lastpub.js"></script>
-        <script type="text/javascript" src="arrays/dashboard.js"></script>
-      </div>
-      <div id="content_main" class="with-info">
-        <div id="breadcrumbs">
-          <p><span>Расположение: </span><a href="usefull.html">Полезности</a> &gt; <a href="dakota.html">Garmin Dakota 20</a> &gt; <a href="dakota.maps.html">Растровые карты</a> &gt; <strong>Подготовка карты в Google Earth</strong>
-          </p>
-        </div>
-        <h1 class="title topictitle1" id="ariaid-title1">Подготовка карты в Google Earth</h1>
-        <div class="body photoBody">
-          <p class="shortdesc">Визуальная привязка карт к спутниковым снимкам</p>
-          <p class="p">Бесплатная программа <a class="xref" href="http://earth.google.com/" target="_blank">Google Earth</a> (Google Планета Земля) также позволяет записывать растровые
-карты в формате <samp class="ph codeph">kmz</samp>. Безусловное преимущество программы
+		  </script>    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>    <script type="text/javascript" src="arrays/ltocent8.js"></script>    <script type="text/JavaScript">window.pageid = "dakota.maps.google.html";</script>    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">  </head>  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="id107AC800IY4">    <div id="container">      <div id="branding">        <h1>          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>        </h1>        <p>Фотографии походов, приглашаю в поход</p>      </div>      <div id="navigation_main">        <ul>          <li class="first">            <a href="index.html">Походы</a>          </li>          <li>            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>          </li>          <li>            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>          </li>          <li>            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>          </li>          <li>            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>          </li>          <li>            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>          </li>          <li>            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>          </li>          <li class="current">            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>          </li>        </ul>      </div>      <div id="tools">        <h3>Page Tools</h3>        <ul id="page_tools">          <li id="search">            <form method="get" action="http://www.google.com/search" target="_blank">              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">              <input type="hidden" name="sitesearch" value="teux.ru">              <input id="search_button" type="submit" value="&gt;">            </form>          </li>        </ul>      </div>      <div id="dashboard">        <div id="navigation_secondary">          <p class="title">Разделы:</p>          <div id="ltoc">            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>          </div>        </div>        <script type="text/javascript" src="arrays/lastpub.js"></script>        <script type="text/javascript" src="arrays/dashboard.js"></script>      </div>      <div id="content_main" class="with-info">        <div id="breadcrumbs">          <p><span>Расположение: </span><a href="usefull.html">Полезности</a> &gt; <a href="dakota.html">Garmin Dakota 20</a> &gt; <a href="dakota.maps.html">Растровые карты</a> &gt; <strong>Подготовка карты в Google Earth</strong>          </p>        </div>        <h1 class="title topictitle1" id="ariaid-title1">Подготовка карты в Google Earth</h1>        <div class="body photoBody">          <p class="shortdesc">Визуальная привязка карт к спутниковым снимкам</p>          <p class="p">Бесплатная программа <a class="xref" href="http://earth.google.com/" target="_blank">Google Earth</a> (Google Планета Земля) также позволяет записывать растровые
+карты в формате <code class="ph codeph">kmz</code>. Безусловное преимущество программы
 — возможность визуальной привязки любого изображения (аэрофотоснимка,
-листа автомобильного атласа, схематичного плана) к мировым координатам.</p>
-          <p class="p">Правда точность привязки не самая высокая. Отчасти из-за того,
+листа автомобильного атласа, схематичного плана) к мировым координатам.</p>          <p class="p">Правда точность привязки не самая высокая. Отчасти из-за того,
 что нужно мышкой совместить растровое изображение со спутниковым
 снимком. Для этого изображение загружают в Google Earth, а затем
 двигают, вращают и масштабируют “на глазок”. Другой причиной неточности
 могут быть нелинейные искажения на растровых картах и неидеальное
 позиционирование самих спутниковых снимков. Поэтому как не выравнивай растровую
 карту, погрешность 20 — 200 м (в зависимости от охватываемой территории)
-может запросто возникнуть.</p>
-          <ol class="ol">
-            <li class="li">
-              <p class="p">В Google Earth отобразите местность, к которой нужно привязать
-растровое изображение.</p>
-              <p class="p">Для примера на следующем рисунке показаны
+может запросто возникнуть.</p>          <ol class="ol">            <li class="li">              <p class="p">В Google Earth отобразите местность, к которой нужно привязать
+растровое изображение.</p>              <p class="p">Для примера на следующем рисунке показаны
 Соловецкие острова. Их масштаб и положение в окне программы выбраны
 так, чтобы было удобно позиционировать загруженную карту поверх
-спутникового снимка.</p>
-              <figure class="fig fignone">
-                <br>
-                <div class="imageleft">
-                  <img class="image imageleft" src="Insets/dakota/ge1.gif" height="504" width="708">
-                </div>
-                <br>
-              </figure>
-              <p class="p">Убедитесь,
+спутникового снимка.</p>              <figure class="fig fignone">                <br>                <div class="imageleft">                  <img class="image imageleft" src="Insets/dakota/ge1.gif" height="504" width="708">                </div>                <br>              </figure>              <p class="p">Убедитесь,
 что отображается боковая панель, на которой есть список <strong class="ph b">Метки</strong>.
 Если боковая панель не видна, отобразите ее с помощью меню <strong class="ph b">Вид</strong> &gt; <strong class="ph b">Боковая
-панель</strong>. </p></li>
-            <li class="li">
-              <p class="p">Выберите меню <strong class="ph b">Добавить</strong> &gt; <strong class="ph b">Накладываемое изображение</strong>.</p>
-              <p class="p">Отображается
-диалог выбора и позиционирования растрового изображения.</p>
-              <figure class="fig fignone">
-                <br>
-                <div class="imageleft">
-                  <img class="image imageleft" src="Insets/dakota/ge2.gif" height="322" width="445">
-                </div>
-                <br>
-              </figure></li>
-            <li class="li">
-              <p class="p">Нажмите <strong class="ph b">Обзор</strong> и выберите растровое изображение для привязки.</p>
-              <p class="p">Для
+панель</strong>. </p>            </li>            <li class="li">              <p class="p">Выберите меню <strong class="ph b">Добавить</strong> &gt; <strong class="ph b">Накладываемое изображение</strong>.</p>              <p class="p">Отображается
+диалог выбора и позиционирования растрового изображения.</p>              <figure class="fig fignone">                <br>                <div class="imageleft">                  <img class="image imageleft" src="Insets/dakota/ge2.gif" height="322" width="445">                </div>                <br>              </figure>            </li>            <li class="li">              <p class="p">Нажмите <strong class="ph b">Обзор</strong> и выберите растровое изображение для привязки.</p>              <p class="p">Для
 примера я выбрал карту Соловецких островов, которая отобразилась
-поверх векторного снимка.</p>
-              <figure class="fig fignone">
-                <br>
-                <div class="imageleft">
-                  <img class="image imageleft" src="Insets/dakota/ge3.gif" height="504" width="708">
-                </div>
-                <br>
-              </figure>
-              <p class="p">Обратите
+поверх векторного снимка.</p>              <figure class="fig fignone">                <br>                <div class="imageleft">                  <img class="image imageleft" src="Insets/dakota/ge3.gif" height="504" width="708">                </div>                <br>              </figure>              <p class="p">Обратите
 внимание, что диалог остается открытым во время позиционирования
-карты.</p></li>
-            <li class="li">
-              <p class="p">Сделайте изображение полупрозрачным, поместив бегунок <strong class="ph b">Прозрачность</strong> примерно
-посередине. </p>
-              <p class="p">Это позволит видеть спутниковый снимок под растровым изображением.
+карты.</p>            </li>            <li class="li">              <p class="p">Сделайте изображение полупрозрачным, поместив бегунок <strong class="ph b">Прозрачность</strong> примерно
+посередине. </p>              <p class="p">Это позволит видеть спутниковый снимок под растровым изображением.
 Можно варьировать положение бегунка, добиваясь оптимальной прозрачности
-для удобства позиционирования.</p></li>
-            <li class="li">
-              <p class="p">Как можно точнее совместите наиболее заметные и важные для
-навигации ориентиры на растровом изображении с векторным снимком.</p>
-              <p class="p">Для
+для удобства позиционирования.</p>            </li>            <li class="li">              <p class="p">Как можно точнее совместите наиболее заметные и важные для
+навигации ориентиры на растровом изображении с векторным снимком.</p>              <p class="p">Для
 совмещения используются зеленые маркеры. Перемещайте изображение
 за центральный маркер в виде перекрестия, масштабируйте за боковые
-маркеры, поворачивайте за маркер в виде ромба.</p></li>
-            <li class="li">
-              <p class="p">Нажмите <strong class="ph b">ОК</strong>, чтобы зафиксировать изображение.</p>
-              <p class="p">При
+маркеры, поворачивайте за маркер в виде ромба.</p>            </li>            <li class="li">              <p class="p">Нажмите <strong class="ph b">ОК</strong>, чтобы зафиксировать изображение.</p>              <p class="p">При
 этом в боковой панели <strong class="ph b">Метки</strong> появится название наложенного
-изображения, как показано на следующем рисунке.</p>
-              <figure class="fig fignone">
-                <br>
-                <div class="imageright">
-                  <img class="image imageright" src="Insets/dakota/ge4.gif" height="504" width="708">
-                </div>
-                <br>
-              </figure></li>
-            <li class="li">
-              <p class="p">Щелкните правой кнопкой мыши по названию наложенного изображения
+изображения, как показано на следующем рисунке.</p>              <figure class="fig fignone">                <br>                <div class="imageright">                  <img class="image imageright" src="Insets/dakota/ge4.gif" height="504" width="708">                </div>                <br>              </figure>            </li>            <li class="li">              <p class="p">Щелкните правой кнопкой мыши по названию наложенного изображения
 в списке <span class="ph uicontrol">Метки</span> и выберите пункт контекстного
-меню <span class="ph uicontrol">Сохранить местоположение как</span>.</p></li>
-            <li class="li">
-              <p class="p">Укажите путь и имя файла <samp class="ph codeph">kmz</samp> и нажмите <span class="ph uicontrol">Сохранить</span>.</p>
-              <p class="p">Архив <samp class="ph codeph">kmz</samp> будет
-создан, в него будет помещено растровое изображение и файл привязки <samp class="ph codeph">doc.kml</samp>.</p></li></ol>
-          <p class="p">Есть одно “но”. Хотя теперь у нас имеется файл <samp class="ph codeph">kmz</samp>,
+меню <span class="ph uicontrol">Сохранить местоположение как</span>.</p>            </li>            <li class="li">              <p class="p">Укажите путь и имя файла <code class="ph codeph">kmz</code> и нажмите <span class="ph uicontrol">Сохранить</span>.</p>              <p class="p">Архив <code class="ph codeph">kmz</code> будет
+создан, в него будет помещено растровое изображение и файл привязки <code class="ph codeph">doc.kml</code>.</p>            </li>          </ol>          <p class="p">Есть одно “но”. Хотя теперь у нас имеется файл <code class="ph codeph">kmz</code>,
 он может не подойти для Dakota из-за того, что программа Google
 Earth не разбивает растровое изображение на фрагменты. Если изображение
 не превышает лимитированный размер 1024х1024, навигатор отобразит
-карту. Но растры побольше не соответствуют требованиям Dakota.</p>
-          <p class="p">Однако и тут выход есть. Можно привязать растр в Google Earth, создать
-файл <samp class="ph codeph">kmz</samp>, а затем открыть его в MAPC2MAPC и разделить
-уже привязанное изображение на фрагменты (см. <a class="xref" href="dakota.maps.fragment.html#id107ACA002HS" title="Постобработка файла kmz в MAPC2MAPC для разбивки на фрагменты">Фрагментирование карты, полученной в Google Earth</a>)</p></div>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
+карту. Но растры побольше не соответствуют требованиям Dakota.</p>          <p class="p">Однако и тут выход есть. Можно привязать растр в Google Earth, создать
+файл <code class="ph codeph">kmz</code>, а затем открыть его в MAPC2MAPC и разделить
+уже привязанное изображение на фрагменты (см. <a class="xref" href="dakota.maps.fragment.html#id107ACA002HS" title="Постобработка файла kmz в MAPC2MAPC для разбивки на фрагменты">Фрагментирование карты, полученной в Google Earth</a>)</p>        </div>        <div id="disqus_thread"></div>        <script type="text/javascript">
                                 var disqus_shortname = "teux",
                                     disqus_identifier = "id107AC800IY4",
                                     disqus_url = "http://www.teux.ru/id107AC800IY4.html";
@@ -203,28 +54,4 @@ Earth не разбивает растровое изображение на ф�
                                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                                 })();
-                            </script>
-      </div>
-      <div id="navigation_supplemental">
-        <h3>Quick Navigation</h3>
-        <ul id="quick_links"></ul>
-        <h3>Language Links</h3>
-        <ul id="inner_navigation">
-          <li class="first">
-            <strong>Вперед:</strong>
-            <a href="dakota.maps.fragment.html">Фрагментирование карты, полученной в Google Earth</a>
-          </li>
-          <li>
-            <strong>Назад:</strong>
-            <a href="dakota.maps.mapc.html">Подготовка карты в MAPC2MAPC</a>
-          </li>
-          <li class="last">
-            <strong>Вверх:</strong>
-            <a href="dakota.maps.html">Растровые карты</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>
-  </body>
-</html>
+                            </script>      </div>      <div id="navigation_supplemental">        <h3>Quick Navigation</h3>        <ul id="quick_links"></ul>        <h3>Language Links</h3>        <ul id="inner_navigation">          <li class="first">            <strong>Вперед:</strong>            <a href="dakota.maps.fragment.html">Фрагментирование карты, полученной в Google Earth</a>          </li>          <li>            <strong>Назад:</strong>            <a href="dakota.maps.mapc.html">Подготовка карты в MAPC2MAPC</a>          </li>          <li class="last">            <strong>Вверх:</strong>            <a href="dakota.maps.html">Растровые карты</a>          </li>        </ul>      </div>    </div>    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>  </body></html>

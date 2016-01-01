@@ -1,101 +1,11 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="ru-ru">
-
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Вуокса</title>
-    <meta name="keywords" content="Андрей Коперский, фотоальбом, Вуокса, Вирта, Лосево, тиверские волоки, водный поход, ">
-    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">
-    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="arrays/menuent.js"></script>
-    <script type="text/javascript" src="scripts/ltoc.js"></script>
-    <script type="text/javascript">
+<html lang="ru-ru">  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        <title>Вуокса</title>    <meta name="keywords" content="Андрей Коперский, фотоальбом, Вуокса, Вирта, Лосево, тиверские волоки, водный поход, ">    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">    <link rel="shortcut icon" href="images/favicon.ico">    <script type="text/javascript" src="scripts/jquery.min.js"></script>    <script type="text/javascript" src="scripts/main.js"></script>    <script type="text/javascript" src="scripts/menu.js"></script>    <script type="text/javascript" src="arrays/menuent.js"></script>    <script type="text/javascript" src="scripts/ltoc.js"></script>    <script type="text/javascript">
 			  $(document).ready(function(){
 				  $("a[rel='cbgroup']").colorbox({transition:"elastic", speed:"700", current:"фото {current} из {total}", width:"70%"});
 				  $("a[rel='slideshow']").colorbox({slideshow:"true", slideshowAuto:"true", slideshowSpeed:"4000", slideshowStart:"Начать показ", slideshowStop:"Остановить показ", current:"фото {current} из {total}", width:"70%"});
 			  });
-		  </script>
-    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
-    <script type="text/javascript" src="arrays/ltocent2.js"></script>
-    <script type="text/JavaScript">window.pageid = "vuoksa.html";</script>
-    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">
-  </head>
-
-
-
-  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="vuoksa7">
-    <div id="container">
-      <div id="branding">
-        <h1>
-          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>
-          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>
-        </h1>
-        <p>Фотографии походов, приглашаю в поход</p>
-      </div>
-      <div id="navigation_main">
-        <ul>
-          <li class="first">
-            <a href="index.html">Походы</a>
-          </li>
-          <li class="current">
-            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>
-          </li>
-          <li>
-            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>
-          </li>
-          <li>
-            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>
-          </li>
-          <li>
-            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>
-          </li>
-          <li>
-            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>
-          </li>
-          <li>
-            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>
-          </li>
-          <li>
-            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>
-          </li>
-        </ul>
-      </div>
-      <div id="tools">
-        <h3>Page Tools</h3>
-        <ul id="page_tools">
-          <li id="search">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">
-              <input type="hidden" name="sitesearch" value="teux.ru">
-              <input id="search_button" type="submit" value="&gt;">
-            </form>
-          </li>
-        </ul>
-      </div>
-      <div id="dashboard">
-        <div id="navigation_secondary">
-          <p class="title">Разделы:</p>
-          <div id="ltoc">
-            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>
-          </div>
-        </div>
-        <script type="text/javascript" src="arrays/lastpub.js"></script>
-        <script type="text/javascript" src="arrays/dashboard.js"></script>
-      </div>
-      <div id="content_main" class="with-info">
-        <div id="breadcrumbs">
-          <p><span>Расположение: </span><a href="river.html">Водные</a> &gt; <strong>Вуокса</strong>
-          </p>
-        </div>
-        <h1 class="title topictitle1" id="ariaid-title1">Вуокса</h1>
-        <div class="body photoBody">
-          <p class="shortdesc">12 — 14 июня 2010 г. Поход выходного дня по Вуоксе</p>
-          <p class="p">Водные бассейны Ленобласти не были исследованы нами. Посвящать
+		  </script>    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>    <script type="text/javascript" src="arrays/ltocent2.js"></script>    <script type="text/JavaScript">window.pageid = "vuoksa.html";</script>    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">  </head>  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="vuoksa7">    <div id="container">      <div id="branding">        <h1>          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>        </h1>        <p>Фотографии походов, приглашаю в поход</p>      </div>      <div id="navigation_main">        <ul>          <li class="first">            <a href="index.html">Походы</a>          </li>          <li class="current">            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>          </li>          <li>            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>          </li>          <li>            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>          </li>          <li>            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>          </li>          <li>            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>          </li>          <li>            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>          </li>          <li>            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>          </li>        </ul>      </div>      <div id="tools">        <h3>Page Tools</h3>        <ul id="page_tools">          <li id="search">            <form method="get" action="http://www.google.com/search" target="_blank">              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">              <input type="hidden" name="sitesearch" value="teux.ru">              <input id="search_button" type="submit" value="&gt;">            </form>          </li>        </ul>      </div>      <div id="dashboard">        <div id="navigation_secondary">          <p class="title">Разделы:</p>          <div id="ltoc">            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>          </div>        </div>        <script type="text/javascript" src="arrays/lastpub.js"></script>        <script type="text/javascript" src="arrays/dashboard.js"></script>      </div>      <div id="content_main" class="with-info">        <div id="breadcrumbs">          <p><span>Расположение: </span><a href="river.html">Водные</a> &gt; <strong>Вуокса</strong>          </p>        </div>        <h1 class="title topictitle1" id="ariaid-title1">Вуокса</h1>        <div class="body photoBody">          <p class="shortdesc">12 — 14 июня 2010 г. Поход выходного дня по Вуоксе</p>          <p class="p">Водные бассейны Ленобласти не были исследованы нами. Посвящать
 им летный отпуск не хотелось, поскольку сильно притяжение Карельского
 перешейка и Белого моря. Ехать же на три июньских выходных, которые
 даются вместе с днем России, казалось слегка утомительно. Но если
@@ -103,445 +13,97 @@
 не мало. Трое суток превращаются в один день, склеенный белыми ночами.
 Сколько еще хотелось успеть, на что действительно не было времени
 и сил. Все же какими энтузиастами мы бываем! Как горят щеки и блестят
-глаза!</p>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo1_large">
-                <colgroup>
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg" rel="cbgroup" title="Андрей и Света">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg">
-                      </a>
-                      <p class="photoTitle">Андрей и Света</p>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg" rel="cbgroup" title="Юля и Саша">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg">
-                      </a>
-                      <p class="photoTitle">Юля и Саша</p>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Заброска</h2>
-            <p class="p">Жителям Ленобласти повезло — Вуокса находится у них под боком.
+глаза!</p>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo1_large">                <colgroup>                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg" rel="cbgroup" title="Андрей и Света">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005586.jpg">                      </a>                      <p class="photoTitle">Андрей и Света</p>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg" rel="cbgroup" title="Юля и Саша">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005539.jpg">                      </a>                      <p class="photoTitle">Юля и Саша</p>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005561.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <h2 class="title sectiontitle">Заброска</h2>            <p class="p">Жителям Ленобласти повезло — Вуокса находится у них под боком.
 А вот из других регионов эта красивейшая водная система не столь
 легко досягаема. До Петербурга можно доехать на поезде, а затем
 погрузиться в электричку на Приозерск. Некоторые станции этой ветки
 расположены вблизи Вуоксы. Также хороша связка “поезд — заказной автобус
-до стапеля”.</p>
-            <p class="p">Мы разменяли ночь на километры и доехали на машине. Пежо Партнер
+до стапеля”.</p>            <p class="p">Мы разменяли ночь на километры и доехали на машине. Пежо Партнер
 произвел хорошее впечатление. Комфортно разместились три пассажира,
 в багажнике хватило место для лодок, рюкзаков и коробок с продуктами,
 а большой клиренс и энергоемкая подвеска внушали спокойствие на
-кочках. Хорошая машина для подобных забросок.</p>
-            <p class="p">Рассветные часы подарили обзорную экскурсию по Петербургу. Невский
+кочках. Хорошая машина для подобных забросок.</p>            <p class="p">Рассветные часы подарили обзорную экскурсию по Петербургу. Невский
 проспект, музей Суворова, Спас на Крови, Исакиевский собор, Эрмитаж,
 Дворцовая площадь, Ростральные колонны, Петропавловская крепость,
 Аврора — все отразилось в стеклах авто за один час. Спешка была
 не в ущерб впечатлениям. Мы находились в ускоренном ритме восприятия,
 в каком дети схватывают все новое, что завораживает, но не требует
 долгой концентрации. Словно пачку открыток, перебирали мы картинки
-питерской архитектуры, и восхищенные мчались дальше.</p>
-            <p class="p">К двум часам дня прибыли в Лосево и остановились у порога. Под
+питерской архитектуры, и восхищенные мчались дальше.</p>            <p class="p">К двум часам дня прибыли в Лосево и остановились у порога. Под
 мелким дождем внимали энергичному шелесту валов, наблюдали их пульсирующие
 формы. Саша и Юля впервые видели этот порог, и, кажется, он произвел
 внушительное впечатление. Его прохождение завершит поход, и теперь
-все узнали, что вскоре предстоит.</p>
-            <div class="float-right">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005485.jpg" rel="cbgroup" title="">
-                        <img class="imagecenter" src="http://photofile.ru/photo/kapsky/115795282/middle/138005485.jpg">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">Дальнейший путь лежит в сторону от приозерской трассы, на Мельниково.
+все узнали, что вскоре предстоит.</p>            <div class="float-right">              <table>                <tbody>                  <tr>                    <td>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005485.jpg" rel="cbgroup" title="">                        <img class="imagecenter" src="http://photofile.ru/photo/kapsky/115795282/middle/138005485.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">Дальнейший путь лежит в сторону от приозерской трассы, на Мельниково.
 По дороге осознаю, что можем не успеть пройти 45 км за неполные
-двое суток, а значит нужно сокращать маршрут.</p>
-            <p class="p">Стапель состоялся у моста через Вуоксу на двенадцать километров
+двое суток, а значит нужно сокращать маршрут.</p>            <p class="p">Стапель состоялся у моста через Вуоксу на двенадцать километров
 ближе к финишу от намеченного старта. Здесь у водораздела южного
 и северного бассейнов Вуокса представляет собой каменный канал шириной
 три метра и длинной сто. Севернее этого места вода растекается озерами,
 над которыми высятся каменные острова, и попадает в Ладожское озеро
 в районе Приозерска. Южный бассейн проходит через Балахановское
 озеро, протоку Вуокса–Вирта, озера Вуокса и Суходольское, разделенные
-лосевским водоскатом, и соединяется все с тем же Ладожским озером.</p>
-            <p class="p">Место водораздела известно как Тиверские волоки. От славянского
+лосевским водоскатом, и соединяется все с тем же Ладожским озером.</p>            <p class="p">Место водораздела известно как Тиверские волоки. От славянского
 поселения Тиверск 14 века осталось лишь каменное основание крепости.
 Когда-то она стола на острове в окружении широких рукавов Вуоксы,
 подставляла стены ветрам и вражеским набегам. Теперь острова нет
-в помине, а возле моста стоит камень с исторической табличкой.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo2_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <p class="p">Пока группа собирается, отгоняю машину в Лосево.
+в помине, а возле моста стоит камень с исторической табличкой.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo2_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005487.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005496.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005562.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005565.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005481.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005488.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005492.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005500.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <p class="p">Пока группа собирается, отгоняю машину в Лосево.
 На рейсовом автобус доезжаю до поворота, дальше играю в автостоп.
 Мимо пролетают автомобили, но ни один не останавливается. И тут
 погода Ленобласти дождем напомнила о скверном характере. Прячусь
 под дерево, но дождь превращается в стену воды, от которой не укрыться.
 В это время группа спасается под тентом, а я забыл даже ветровку.
 Выхожу на трассу с целлофановым пакетом на голове. Может, кто-то сжалится
-над бедолагой.</p>
-            <p class="p">Свет фар мелькнул за поворотом, в туче брызг появился внедорожник
+над бедолагой.</p>            <p class="p">Свет фар мелькнул за поворотом, в туче брызг появился внедорожник
 Лексус. Поравнялся с поднятой рукой и проехал дальше. Но уже через
 секунду свет стоп-сигналов согрел меня. Заскакиваю внутрь, рассыпая
-благодарности.</p>
-            <p class="p">— Наверное, пожалели человека под дождем? — спрашиваю благодетелей,
+благодарности.</p>            <p class="p">— Наверное, пожалели человека под дождем? — спрашиваю благодетелей,
 мужчину и женщину лет тридцати пяти. —&nbsp;Именно так,— отвечают,—
-У нас кожаные сидения, поэтому не о чем беспокоиться.</p>
-            <p class="p">Дальше рассказываю немного о себе, о стапеле у моста, о Тиверске.
+У нас кожаные сидения, поэтому не о чем беспокоиться.</p>            <p class="p">Дальше рассказываю немного о себе, о стапеле у моста, о Тиверске.
 Взамен узнаю, что недалеко отсюда на острове посреди Вуоксы стоит
 деревянная церковь. Влюбленная пара на Лексусе едет к батюшке, чтобы
-просить венчать их. Красивая идея.</p>
-            <p class="p">Доехали до моста и пожелали друг другу хорошего похода и скорого
+просить венчать их. Красивая идея.</p>            <p class="p">Доехали до моста и пожелали друг другу хорошего похода и скорого
 венчания. Все же, мир не без добрых людей. Дождь прекратился, и
-я радостный пошел к месту стапеля.</p></section>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Церковь на Вуоксе</h2>
-            <div class="float-left">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005577.jpg" rel="cbgroup" title="">
-                        <img class="imagecenter" src="http://photofile.ru/photo/kapsky/115795282/middle/138005577.jpg">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">Известие о церкви посреди Вуоксы вдохновило, и я хотел скорее
+я радостный пошел к месту стапеля.</p></section>          <section class="section storySection">            <h2 class="title sectiontitle">Церковь на Вуоксе</h2>            <div class="float-left">              <table>                <tbody>                  <tr>                    <td>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005577.jpg" rel="cbgroup" title="">                        <img class="imagecenter" src="http://photofile.ru/photo/kapsky/115795282/middle/138005577.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">Известие о церкви посреди Вуоксы вдохновило, и я хотел скорее
 поделиться информацией. Неожиданно на месте стапеля встретился посторонний
 человек. Молодой парень спрашивал у наших, как пройти к деревне
 Васильево. Оказалось, он тоже ищет церковь на острове. Удивительно
 — второе совпадение. Я рассказал пилигриму все, что знал о местонахождении
 церкви, то есть почти ничего, и распрощался. Затем поведал о церкви
-своим.</p>
-            <p class="p">Без колебаний все согласились пойти на север, хотя это было противоположное
+своим.</p>            <p class="p">Без колебаний все согласились пойти на север, хотя это было противоположное
 для нас направление. По прикидкам, церковь находилась на расстоянии
 не более четырех километров. Как вскоре выяснилось, путь до нее
 и обратно составил двенадцать километров, то есть практически столько
-же, сколько бы мы прошли от первоначально задуманного старта.</p>
-            <p class="p">В четыре часа дня вознесли благодарность за солнечную погоду
+же, сколько бы мы прошли от первоначально задуманного старта.</p>            <p class="p">В четыре часа дня вознесли благодарность за солнечную погоду
 и отчалили. Дул попутный ветер, и хотя лодку Саши и Юли сильно вертело,
 шли мы быстро. В одном месте даже разогнались до 9 км/ч, что прилично
-для Щуки.</p>
-            <p class="p">Берега вокруг напоминали Карелию: повсюду из воды торчали высокие
+для Щуки.</p>            <p class="p">Берега вокруг напоминали Карелию: повсюду из воды торчали высокие
 каменные лбы, на островах гнездились чайки, по берегам валялись
 камни разных калибров. Вода в Вуоксе чуть коричневатая от торфяников.
 И только смешанные леса ближе к среднерусской растительности. Населенка
 в этом месте достаточно плотная, однако все выглядит культурно.
 Никаких покосившихся домиков, никакого мусора за заборами. Да и заборов-то
-нет, а вместо домиков редкие коттеджи. </p>
-            <p class="p">Спустя час увидели образчик деревянного зодчества — церковь Андрея
+нет, а вместо домиков редкие коттеджи. </p>            <p class="p">Спустя час увидели образчик деревянного зодчества — церковь Андрея
 Первозванного на Вуоксе. Остров под ней действительно маленький,
 а внутри церкви вряд ли поместится больше пятнадцати человек. Для
 связи с землей служит паромная переправа и маленькая пристань. Церковь
 построена недавно, но, по слухам, стоит на месте прежней очень старой
 церкви. И сейчас церковь действует, в ней проходят службы и различные
-обряды.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo3_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Путь от моста к церкви</h2>
-            <center>
-              <object codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" width="740" height="600">
-                <param name="wmode" value="transparent">
-                <param name="movie" value="http://www.everytrail.com/swf/widget.swf">
-                <param name="FlashVars" value="units=metric&amp;mode=1&amp;tripId=667286">
-                <embed src="http://www.everytrail.com/swf/widget.swf" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" width="740" height="600" FlashVars="units=metric&amp;mode=1&amp;mapType=Hybrid&amp;tripId=667286"></embed>
-              </object>
-              <br>
-              <a target="_blank" href="http://www.everytrail.com/fullscreen.php?trip_id=667286">
-                Смотреть карту во весь экран</a>
-            </center></section>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Тиверские волоки</h2>
-            <p class="p">В первый день предстояло преодолеть тиверские волоки. Они находятся
-южнее моста, у которого был стапель.</p>
-            <p class="p">Возникновение волоков связано с появлением стока в Ладогу в южном
+обряды.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo3_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005506.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005567.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005569.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005572.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005504.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005510.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005576.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005580.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <h2 class="title sectiontitle">Путь от моста к церкви</h2>            <center>              <iframe marginheight="0" marginwidth="0" frameborder="0" scrolling="no" src="http://www.everytrail.com/iframe2.php?trip_id=667286&amp;width=740&amp;height=600" width="740" height="600"></iframe>              <br>            </center></section>          <section class="section storySection">            <h2 class="title sectiontitle">Тиверские волоки</h2>            <p class="p">В первый день предстояло преодолеть тиверские волоки. Они находятся
+южнее моста, у которого был стапель.</p>            <p class="p">Возникновение волоков связано с появлением стока в Ладогу в южном
 бассейне Вуоксы. Начало Вуоксы находится на озере Сайма в Финляндии.
 Затем река проходит через Светогорск и несет воды на юго-восток.
 Когда-то Вуокса текла на север мимо Тиверска и впадала в Ладогу
 в районе Приозерска. После соединения озера Суходольское с Ладожским,
 уровень воды в южном бассейне упал, появился лосевский водоскат,
-а в районе Тиверского городища образовались волоки.</p>
-            <p class="p">В настоящее время насчитывается четыре волока. Судя по описаниям
+а в районе Тиверского городища образовались волоки.</p>            <p class="p">В настоящее время насчитывается четыре волока. Судя по описаниям
 80-х годов, волоков было три. С тех пор вход в затон перед последним
 волоком обмелел и зарос травой, так что приходится обносить и это
 место (волок 3). На спутниковой карте видно, что более короткий
-третий волок получился бы с южного края затона.</p>
-            <center>
-              <object codebase="http://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab" width="740" height="600">
-                <param name="wmode" value="transparent">
-                <param name="movie" value="http://www.everytrail.com/swf/widget.swf">
-                <param name="FlashVars" value="units=metric&amp;mode=1&amp;tripId=667301">
-                <embed src="http://www.everytrail.com/swf/widget.swf" quality="high" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" wmode="transparent" width="740" height="600" FlashVars="units=metric&amp;mode=1&amp;mapType=Hybrid&amp;tripId=667301"></embed>
-              </object>
-              <br>
-              <a target="_blank" href="http://www.everytrail.com/fullscreen.php?trip_id=667301">
-                Смотреть карту во весь экран</a>
-            </center></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo4_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Следующий день</h2>
-            <p class="p">Спать легли под утро. Усталость от волоков не помешала повеселиться
+третий волок получился бы с южного края затона.</p>            <center>              <iframe marginheight="0" marginwidth="0" frameborder="0" scrolling="no" src="http://www.everytrail.com/iframe2.php?trip_id=667301&amp;width=740&amp;height=600" width="740" height="600"></iframe>              <br>            </center></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo4_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005520.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005582.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <h2 class="title sectiontitle">Следующий день</h2>            <p class="p">Спать легли под утро. Усталость от волоков не помешала повеселиться
 и пожарить шашлык. Проснуться договорились по биологическим часам.
 Я встал первым, искупался и занялся лагерными делами. К одиннадцати
 показалось шевеление в палатках Саши и Юли, а затем и Света — любитель
-поспать — поворчала и выбралась из спальника.</p>
-            <p class="p">Дул прохладный ветер, а мелкий дождь прерывисто накрывал стоянку.
+поспать — поворчала и выбралась из спальника.</p>            <p class="p">Дул прохладный ветер, а мелкий дождь прерывисто накрывал стоянку.
 Возле теплого и сухого камня полыхала нодья, а на столе под тентом
 стоял разогретый вчерашний шашлык и бутылка абхазского вина. Вокруг
 них куча сладостей в пакетах перемежалась ломтиками сыра и колбасы,
@@ -549,81 +111,22 @@
 пучки зелени, а посреди всего этого высились сторожевые башенки ткемалевого
 соуса и горчицы. Ограждала столик батарея из бутылки пива, двух
 коньяка и пары минеральной воды. И еще канн с горячим чаем стоял
-у стола. О выходе на маршрут никто и не думал.</p>
-            <p class="p">Красное вино веселило, и мы болтали о всяких пустяках. Иногда
+у стола. О выходе на маршрут никто и не думал.</p>            <p class="p">Красное вино веселило, и мы болтали о всяких пустяках. Иногда
 я вспоминал о запланированных километрах, но ласкал надежду на улучшение
 погоды после обеда, и не торопился. Белые ночи позволяют идти хоть
 сутки напролет, а нам действительно нужна была безветренная погода.
 Саше с Юлей трудно выгребать на озерах против сильного ветра, да
-и нам со Светой не хотелось напрягаться.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo5_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <p class="p">Наконец коллективное сознание пришло к мысли: “пора”. Такого
+и нам со Светой не хотелось напрягаться.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo5_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005522.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005525.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005528.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005531.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <p class="p">Наконец коллективное сознание пришло к мысли: “пора”. Такого
 позднего выхода еще не было — на воде мы оказались в четыре часа
 дня, то есть спустя сутки от начала похода. Режим ритмичный, только
 сдвинулся часов на шесть. Я немного беспокоился из-за напряженного
 графика, но и подгонять группу не хотел, чтобы не уподобиться белке
-в колесе.</p>
-            <p class="p">Дальше шли по озерам с нечеткой линией берега, по узким протокам
+в колесе.</p>            <p class="p">Дальше шли по озерам с нечеткой линией берега, по узким протокам
 среди сочной зелени, мимо гряды островов. Интересно, что после тиверских
 волоков берега стали низкими и часто болотистыми, а вот в северном
 бассейне Вуоксы, где на острове стоит церковь, берега были сплошь
-высокие скальные. Всего-то прошли водораздел и такой контраст.</p>
-            <p class="p">В одном месте из воды вырос сад камней. Такие камни всегда завораживают
-— каждый имеет неповторимую форму и характер, они словно живые.</p>
-            <p class="p">Возле одного острова беспокойная чайка стала пугать пикированием,
+высокие скальные. Всего-то прошли водораздел и такой контраст.</p>            <p class="p">В одном месте из воды вырос сад камней. Такие камни всегда завораживают
+— каждый имеет неповторимую форму и характер, они словно живые.</p>            <p class="p">Возле одного острова беспокойная чайка стала пугать пикированием,
 защищая детенышей. Смотрим, а на плоском камне над водой жмутся
 два серых в крапинку цыпленка. Малютки явно не желают встречи с
 нами, но и прыгать в воду не хотят. Жаль было беспокоить пушистиков
@@ -632,145 +135,29 @@
 неуклюже и смешно перебираться через поваленный тростник. Им не
 привыкать к купаниям, а мама-чайка подумала, какие сообразительные
 у нее дети, как ловко спаслись от хищников, и прокричала нам вслед
-победный клич.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo6_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg" rel="cbgroup" title="Птенцы чайки">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg">
-                      </a>
-                      <p class="photoTitle">Птенцы чайки</p>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg" rel="cbgroup" title="Разрушенное навигационное сооружение">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg">
-                      </a>
-                      <p class="photoTitle">Разрушенное навигационное сооружение</p>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <p class="p">Когда вышли на широкую протоку Вуокса-Вирта, погода
+победный клич.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo6_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005584.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005542.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005534.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005537.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg" rel="cbgroup" title="Птенцы чайки">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005543.jpg">                      </a>                      <p class="photoTitle">Птенцы чайки</p>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg" rel="cbgroup" title="Разрушенное навигационное сооружение">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005545.jpg">                      </a>                      <p class="photoTitle">Разрушенное навигационное сооружение</p>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <p class="p">Когда вышли на широкую протоку Вуокса-Вирта, погода
 совсем наладилась. Штиль отполировал зеркало воды до блеска, солнце
 развеселило сосны на брегах. Стало очень красиво. Поздний обед,
-а по времени ужин, устроили на большом острове в сосновом редколесье.</p>
-            <p class="p">К этому моменту стал очевиден переизбыток продуктов, поэтому на суп пошли четыре банки рыбных
+а по времени ужин, устроили на большом острове в сосновом редколесье.</p>            <p class="p">К этому моменту стал очевиден переизбыток продуктов, поэтому на суп пошли четыре банки рыбных
     консервов. Суп получился густой и вкусный, но очень много. Саша из последних сил не давал
     ему пропасть, спасая ложка за ложкой. Остальные соглашались отправить полкотелка на прикорм
     рыбам и поддаться притяжению каменного стола, с металлическим подносом, мельхиоровыми
     рюмками и начатой бутылкой коньяка Апшерон. Мы с Сашей и Юлей апеллировали к трехзвездочному
     напитку, а Света потягивала из фляжки Алябелис, то есть какой-то сливочный ликер на
     ирландском виски. Тост следовал за тостом, и уже замелькала надежда заночевать прямо в этом
-    месте.</p>
-            <p class="p">Но нужно было идти дальше. Прерываю вечеринку и объявляю пятнадцатиминутную
+    месте.</p>            <p class="p">Но нужно было идти дальше. Прерываю вечеринку и объявляю пятнадцатиминутную
 готовность. Обед закончился в десять вечера, и мы продолжили путь
 по Вирте. Мест для стоянок здесь мало. Кругом дачи и подъезды для
-машин, стоят шумные компании.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo7_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <p class="p">В растянутых сумерках выцвел розовый закат, а в
+машин, стоят шумные компании.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo7_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005549.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005547.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <p class="p">В растянутых сумерках выцвел розовый закат, а в
 воде отразились темные облака. Нам хотелось поскорее найти приличную
 стоянку, но все они были заняты. Белой ночью мы тихо вышли на просторы
 озера Вуокса. Дневной одометр показывал двадцать семь километров,
-а до порога оставалось около пяти.</p>
-            <p class="p">Некоторое время шли вдоль берега и обреченно наблюдали, как над
+а до порога оставалось около пяти.</p>            <p class="p">Некоторое время шли вдоль берега и обреченно наблюдали, как над
 каждой стоянкой плывет сизый дым костра. Одно за другим пропускали
 засиженные места, пока не встретили чистый песчаный пляж. Он принадлежал
 базе отдыха, на которую еще не заехали гости. Выходит, нам открывать
 сезон! В распоряжении оказался пляж, прилегающий лес с дровами, место
-для костра и столик. Неподалеку шумела компания, но нам она не мешала.</p>
-            <p class="p">Не было нужды готовить ужин спустя три часа после обеда, поэтому
+для костра и столик. Неподалеку шумела компания, но нам она не мешала.</p>            <p class="p">Не было нужды готовить ужин спустя три часа после обеда, поэтому
 просто вскипятили чай и разложили на столе закуски. Выпили по рюмочке,
 и возрадовались удачному месту и тому, что втиснулись в рамки выходных.
 Осталось всего ничего — сплавиться по лосевскому порогу. Однако,
@@ -778,80 +165,21 @@
 Юля и Света продолжили разминаться вкусными напитками. Засыпая,
 я слышал их беспрестанный смех, но он становился все тише и удалялся
 вместе с чистым озером и костром на песчаном пляже, пока совсем
-не растворился в темноте.</p></section>
-          <center>
-            <div class="photo-section">
-              <table class="photoFile photo-section--table" cellspacing="10px" id="photo8_middle">
-                <colgroup>
-                  <col width="1*">
-                  <col width="1*">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg">
-                      </a>
-                    </td></tr>
-                  <tr>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg">
-                      </a>
-                    </td>
-                    <td>
-                      <p class="camera">
-                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg">
-                          <img src="images/camera.gif">
-                        </a>
-                      </p>
-                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg" rel="cbgroup" title="Вуокса">
-                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg">
-                      </a>
-                    </td></tr></tbody>
-              </table>
-            </div>
-          </center>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Лосевский порог</h2>
-            <p class="p">В двенадцать часов следующего дня лодки уткнулись в берег перед
+не растворился в темноте.</p></section>          <center>            <div class="photo-section">              <table class="photoFile photo-section--table" cellspacing="10px" id="photo8_middle">                <colgroup>                  <col width="1*">                  <col width="1*">                </colgroup>                <tbody>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005588.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005553.jpg">                      </a>                    </td>                  </tr>                  <tr>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005555.jpg">                      </a>                    </td>                    <td>                      <p class="camera">                        <a title="Полный размер" target="_blank" href="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg">                          <img src="images/camera.gif">                        </a>                      </p>                      <a href="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg" rel="cbgroup" title="Вуокса">                        <img class="photo photo-section--photo" src="http://photofile.ru/photo/kapsky/115795282/middle/138005556.jpg">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>          </center>          <section class="section storySection">            <h2 class="title sectiontitle">Лосевский порог</h2>            <p class="p">В двенадцать часов следующего дня лодки уткнулись в берег перед
 лосевским порогом. Машина стояла здесь же, в ста метрах на территории
 базы рафтов. Для сплава на берегу осталась моя Щука. Остальные вещи
 быстро сложили в рюкзаки и утрамбовали в багажник. Света и Юля ушли
-на мост, снимать наш с Сашей проход.</p>
-            <p class="p">Сели в лодку. Я проверил руль и уже готов был отчалить, но заметил
+на мост, снимать наш с Сашей проход.</p>            <p class="p">Сели в лодку. Я проверил руль и уже готов был отчалить, но заметил
 высокое расположение матроса. Саша объяснил, что находится в коленной
 посадке. Вытягивать ноги вперед он не хочет, потому что боится застрять
 в лодке при оверкиле. Такая посадка вызвала сомнение, а особенно
 насторожила возможность налететь коленями на камень. Но Саше удалось
 немного втиснуться между баллонами, и центр тяжести опустился. Да
-и обливных каменей по центру, кажется, нет.</p>
-            <p class="p">Мы вышли из суводи и устремились в порог. Конвейер водоската
+и обливных каменей по центру, кажется, нет.</p>            <p class="p">Мы вышли из суводи и устремились в порог. Конвейер водоската
 понес к мосту. Повинуясь рулю и веслам, лодка держала курс на первый
 разгонный вал. После него я надеялся&nbsp;взлететь на следующий
 более высокий вал. Малейшая неточность могла тормознуть нас на взлете,
-развернуть лагом и сбросить с гребня обратно. Но получилось смешнее.</p>
-            <p class="p">Набрали скорость и соскользнули с разгонного вала. Следующий
+развернуть лагом и сбросить с гребня обратно. Но получилось смешнее.</p>            <p class="p">Набрали скорость и соскользнули с разгонного вала. Следующий
 вал переломил баллоны и подкинул нос вертикально. Матрос выстрелил
 вверх, как из пушки, и по инерции чуть не взлетел над лодкой. Мгновенно
 нос распрямился и плюхнулся вниз. Парящий Саша зацепился ногами
@@ -859,26 +187,13 @@
 Лодка придавила вал и продолжала тормозить. Объятый воздушными потоками,
 матрос не желал быстро вернуться в лодку. Этот праздник парения
 так вдохновил его, что приземлившись он отбил поклон, даже не уточнив
-направление на восток.</p>
-            <center>
-              <object height="344" width="425">
-                <param name="movie" value="http://www.youtube.com/v/hOzK45bLnWA&amp;hl=ru&amp;fs=1&amp;rel=0">
-                <param name="allowFullScreen" value="true">
-                <param name="allowscriptaccess" value="always">
-                <embed height="344" width="425" type="application/x-shockwave-flash" src="http://www.youtube.com/v/hOzK45bLnWA&amp;hl=ru&amp;fs=1&amp;rel=0" play="true" loop="false" WMODE="transparent" allowScriptAccess="sameDomain"></embed>
-              </object>
-            </center>
-            <p class="p">В это время на мосту Света с Юлей полегли от хохота. Они могли
+направление на восток.</p>            <center>              <object height="344" width="425">                <param name="movie" value="http://www.youtube.com/v/hOzK45bLnWA&amp;hl=ru&amp;fs=1&amp;rel=0">                <param name="allowFullScreen" value="true">                <param name="allowscriptaccess" value="always">                <embed height="344" width="425" type="application/x-shockwave-flash" src="http://www.youtube.com/v/hOzK45bLnWA&amp;hl=ru&amp;fs=1&amp;rel=0" play="true" loop="false" WMODE="transparent" allowScriptAccess="sameDomain"></embed>              </object>            </center>            <p class="p">В это время на мосту Света с Юлей полегли от хохота. Они могли
 ожидать оверкиль или напряженную попытку удержать равновесие, но
 поклон они точно не ожидали. Этот экстравагантный поступок еще долго
 вызывал смех и повышал настроение. Все-таки мужественные матросы
-умеют порадовать публику.</p></section>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Дорога обратно</h2>
-            <p class="p">Домой отправились в два часа дня. Я решил поехать через Кировск
+умеют порадовать публику.</p></section>          <section class="section storySection">            <h2 class="title sectiontitle">Дорога обратно</h2>            <p class="p">Домой отправились в два часа дня. Я решил поехать через Кировск
 и выйти на московскую трассу в районе Любани. Бетонка вдоль Ладожского
-озера оказалась разбитой, и пришлось тащиться еле-еле.</p>
-            <p class="p">Рядом с Кировском находится город Шлиссельбург, а возле него
+озера оказалась разбитой, и пришлось тащиться еле-еле.</p>            <p class="p">Рядом с Кировском находится город Шлиссельбург, а возле него
 на острове у входа в Неву стоит крепость Орешек. Старая крепость,
 служившая при царях политической тюрьмой, вписала в историю много
 драматических и героических страниц. Во время Второй Мировой войны
@@ -888,33 +203,9 @@
 десант. Высадка выполнялась в километре от берега прямо в ледяную
 воду. Атака не принесла существенных результатов, а из 2000 моряков
 и солдат в живых осталось около 20. Больше половины не дошло до
-берега. Так отчаянно пытались спасти Ленинград.</p>
-            <p class="p">После Кировска навигатор повел по второстепенным дорогам. Накатанные
+берега. Так отчаянно пытались спасти Ленинград.</p>            <p class="p">После Кировска навигатор повел по второстепенным дорогам. Накатанные
 грунтовки не сильно сдерживали темп движения, и к шести вечера мы
 вышли на трассу, а к трем ночи въехали в Москву. Утром я опоздал
 на работу, но это была малая плата за столь увлекательную поездку,
 состоявшуюся благодаря Свете, Саше, Юле. Общими усилиями путешествие
-стало одним из лучших походов выходного дня.</p></section></div></div>
-      <div id="navigation_supplemental">
-        <h3>Quick Navigation</h3>
-        <ul id="quick_links"></ul>
-        <h3>Language Links</h3>
-        <ul id="inner_navigation">
-          <li class="first">
-            <strong>Вперед:</strong>
-            <a href="whitesea2010.html">Белое море 2010</a>
-          </li>
-          <li>
-            <strong>Назад:</strong>
-            <a href="granichnaja.html">Граничная</a>
-          </li>
-          <li class="last">
-            <strong>Вверх:</strong>
-            <a href="river.html">Водные</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>
-  </body>
-</html>
+стало одним из лучших походов выходного дня.</p></section></div></div>      <div id="navigation_supplemental">        <h3>Quick Navigation</h3>        <ul id="quick_links"></ul>        <h3>Language Links</h3>        <ul id="inner_navigation">          <li class="first">            <strong>Вперед:</strong>            <a href="whitesea2010.html">Белое море 2010</a>          </li>          <li>            <strong>Назад:</strong>            <a href="granichnaja.html">Граничная</a>          </li>          <li class="last">            <strong>Вверх:</strong>            <a href="river.html">Водные</a>          </li>        </ul>      </div>    </div>    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>  </body></html>

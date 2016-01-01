@@ -1,146 +1,35 @@
 <!DOCTYPE html
   SYSTEM "about:legacy-compat">
-<html lang="ru-ru">
-
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Загадочный Datum и прямоугольная сетка</title>
-    <meta name="keywords" content="Андрей Коперский, фотоальбом, ">
-    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">
-    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script type="text/javascript" src="scripts/menu.js"></script>
-    <script type="text/javascript" src="arrays/menuent.js"></script>
-    <script type="text/javascript" src="scripts/ltoc.js"></script>
-    <script type="text/javascript">
+<html lang="ru-ru">  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        <title>Загадочный Datum и прямоугольная сетка</title>    <meta name="keywords" content="Андрей Коперский, фотоальбом, ">    <link type="text/css" rel="stylesheet" href="stylesheets/screen_styles.css">    <link type="text/css" media="screen" rel="stylesheet" href="stylesheets/colorbox.css">    <link rel="shortcut icon" href="images/favicon.ico">    <script type="text/javascript" src="scripts/jquery.min.js"></script>    <script type="text/javascript" src="scripts/main.js"></script>    <script type="text/javascript" src="scripts/menu.js"></script>    <script type="text/javascript" src="arrays/menuent.js"></script>    <script type="text/javascript" src="scripts/ltoc.js"></script>    <script type="text/javascript">
 			  $(document).ready(function(){
 				  $("a[rel='cbgroup']").colorbox({transition:"elastic", speed:"700", current:"фото {current} из {total}", width:"70%"});
 				  $("a[rel='slideshow']").colorbox({slideshow:"true", slideshowAuto:"true", slideshowSpeed:"4000", slideshowStart:"Начать показ", slideshowStop:"Остановить показ", current:"фото {current} из {total}", width:"70%"});
 			  });
-		  </script>
-    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>
-    <script type="text/javascript" src="arrays/ltocent8.js"></script>
-    <script type="text/JavaScript">window.pageid = "dakota.datum.html";</script>
-    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">
-  </head>
-
-
-
-  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="dakota.datum">
-    <div id="container">
-      <div id="branding">
-        <h1>
-          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>
-          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>
-        </h1>
-        <p>Фотографии походов, приглашаю в поход</p>
-      </div>
-      <div id="navigation_main">
-        <ul>
-          <li class="first">
-            <a href="index.html">Походы</a>
-          </li>
-          <li>
-            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>
-          </li>
-          <li>
-            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>
-          </li>
-          <li>
-            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>
-          </li>
-          <li>
-            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>
-          </li>
-          <li>
-            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>
-          </li>
-          <li>
-            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>
-          </li>
-          <li class="current">
-            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>
-          </li>
-        </ul>
-      </div>
-      <div id="tools">
-        <h3>Page Tools</h3>
-        <ul id="page_tools">
-          <li id="search">
-            <form method="get" action="http://www.google.com/search" target="_blank">
-              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">
-              <input type="hidden" name="sitesearch" value="teux.ru">
-              <input id="search_button" type="submit" value="&gt;">
-            </form>
-          </li>
-        </ul>
-      </div>
-      <div id="dashboard">
-        <div id="navigation_secondary">
-          <p class="title">Разделы:</p>
-          <div id="ltoc">
-            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>
-          </div>
-        </div>
-        <script type="text/javascript" src="arrays/lastpub.js"></script>
-        <script type="text/javascript" src="arrays/dashboard.js"></script>
-      </div>
-      <div id="content_main" class="with-info">
-        <div id="breadcrumbs">
-          <p><span>Расположение: </span><a href="usefull.html">Полезности</a> &gt; <a href="dakota.html">Garmin Dakota 20</a> &gt; <strong>Загадочный Datum и прямоугольная сетка</strong>
-          </p>
-        </div>
-        <h1 class="title topictitle1" id="ariaid-title1">Загадочный Datum и прямоугольная сетка</h1>
-        <div class="body photoBody">
-          <p class="shortdesc">Настройка Datum и отображение метрических координат</p>
-          <section class="section storySection">
-            <p class="p">Настраивать датум нужно для того, чтобы
+		  </script>    <script type="text/javascript" src="scripts/jquery.colorbox.js"></script>    <script type="text/javascript" src="arrays/ltocent8.js"></script>    <script type="text/JavaScript">window.pageid = "dakota.datum.html";</script>    <link rel="Shortcut Icon" type="image/ico" href="images/favicon.ico">  </head>  <body onload="if (navigator.appName.indexOf('Microsoft')!=-1) window.jstree.OpenTreeNode(window.pageid);" id="dakota.datum">    <div id="container">      <div id="branding">        <h1>          <a href="http://www.teux.ru">Андрей Коперский — фотографии походов</a>          <script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter4829635 = new Ya.Metrika({id:4829635}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script>        </h1>        <p>Фотографии походов, приглашаю в поход</p>      </div>      <div id="navigation_main">        <ul>          <li class="first">            <a href="index.html">Походы</a>          </li>          <li>            <a href="river.html" onmouseover="dropdownmenu(this, event, menu2ent , '')" onmouseout="delayhidemenu()">Водные</a>          </li>          <li>            <a href="kola.html" onmouseover="dropdownmenu(this, event, menu3ent , '')" onmouseout="delayhidemenu()">Кольский п-ов</a>          </li>          <li>            <a href="afoot.html" onmouseover="dropdownmenu(this, event, menu4ent , '')" onmouseout="delayhidemenu()">Пешие</a>          </li>          <li>            <a href="skiing.html" onmouseover="dropdownmenu(this, event, menu5ent , '')" onmouseout="delayhidemenu()">Лыжные</a>          </li>          <li>            <a href="auto.html" onmouseover="dropdownmenu(this, event, menu6ent , '')" onmouseout="delayhidemenu()">Автомобильные</a>          </li>          <li>            <a href="camping.html" onmouseover="dropdownmenu(this, event, menu7ent , '')" onmouseout="delayhidemenu()">Прочие</a>          </li>          <li class="current">            <a href="usefull.html" onmouseover="dropdownmenu(this, event, menu8ent , '')" onmouseout="delayhidemenu()">Полезности</a>          </li>        </ul>      </div>      <div id="tools">        <h3>Page Tools</h3>        <ul id="page_tools">          <li id="search">            <form method="get" action="http://www.google.com/search" target="_blank">              <input onfocus="this.className='txt-very-dark-gray'; this.value=''" class="txt-light-gray" id="search_text" type="text" name="q" size="30" maxlength="255" value="Поиск по сайту через Google">              <input type="hidden" name="sitesearch" value="teux.ru">              <input id="search_button" type="submit" value="&gt;">            </form>          </li>        </ul>      </div>      <div id="dashboard">        <div id="navigation_secondary">          <p class="title">Разделы:</p>          <div id="ltoc">            <script type="text/JavaScript">window.jstree = new MakeTree(window.TITEMS, false);</script>          </div>        </div>        <script type="text/javascript" src="arrays/lastpub.js"></script>        <script type="text/javascript" src="arrays/dashboard.js"></script>      </div>      <div id="content_main" class="with-info">        <div id="breadcrumbs">          <p><span>Расположение: </span><a href="usefull.html">Полезности</a> &gt; <a href="dakota.html">Garmin Dakota 20</a> &gt; <strong>Загадочный Datum и прямоугольная сетка</strong>          </p>        </div>        <h1 class="title topictitle1" id="ariaid-title1">Загадочный Datum и прямоугольная сетка</h1>        <div class="body photoBody">          <p class="shortdesc">Настройка Datum и отображение метрических координат</p>          <section class="section storySection">            <p class="p">Настраивать датум нужно для того, чтобы
 навигатор показывал местоположение в координатах плоской прямоугольной
 сетки. Ориентироваться по прямоугольной сетке удобнее, чем по градусным
 координатам, поскольку каждая линия имеет километровую отметку.
-Например, на рисунке показан узел сетки с координатами <samp class="ph codeph">N6190
-E7407</samp>.</p>
-            <div class="float-left">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="Insets/dakota/img10.gif" rel="cbgroup" title="">
-                        <img class="imagecenter" src="Insets/dakota/img10.gif">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">Если навигатор выдает текущую координату на сетке, по ней можно
+Например, на рисунке показан узел сетки с координатами <code class="ph codeph">N6190
+E7407</code>.</p>            <div class="float-left">              <table>                <tbody>                  <tr>                    <td>                      <a href="Insets/dakota/img10.gif" rel="cbgroup" title="">                        <img class="imagecenter" src="Insets/dakota/img10.gif">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">Если навигатор выдает текущую координату на сетке, по ней можно
 найти соответствующую точку на бумажной карте. Причем навигатор
 сообщает координату с точностью до метра. Так, координата из предыдущего
-абзаца была бы показана в виде <samp class="ph codeph">N06190000 E07407000</samp>.
+абзаца была бы показана в виде <code class="ph codeph">N06190000 E07407000</code>.
 Благодаря этой способности навигатора можно искать точки на местности,
-координаты которых выражены в километрах и метрах прямоугольной сетки.</p>
-            <p class="p">В большинстве случаев указанными задачами исчерпывается необходимость
+координаты которых выражены в километрах и метрах прямоугольной сетки.</p>            <p class="p">В большинстве случаев указанными задачами исчерпывается необходимость
 настройки датума. Если высокая точность не требуется, допустим достаточно
 определить, на каком острове вы находитесь, можно обойтись без датума.
 Максимальное отклонение на территории России не превысит 140 метров. Если
 задать датум, также будут корректироваться угловые координаты. Однако,
-я знаю мало людей, которые этим пользуются.</p>
-            <p class="p">С Dakota 20 поставляется векторная карта “Дороги России. ТОПО”.
+я знаю мало людей, которые этим пользуются.</p>            <p class="p">С Dakota 20 поставляется векторная карта “Дороги России. ТОПО”.
 Для ее использования настраивать датум не нужно, поскольку он не
-влияет на позицию графического символа, обозначающего местоположение.</p></section>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Проекции, проекции...</h2>
-            <p class="p">Наверное, немногие изучали геодезию и знают разницу между проекцией
+влияет на позицию графического символа, обозначающего местоположение.</p>          </section>          <section class="section storySection">            <h2 class="title sectiontitle">Проекции, проекции...</h2>            <p class="p">Наверное, немногие изучали геодезию и знают разницу между проекцией
 Гаусса-Крюгера и проекцией Universal Transverse Mercator. Я тоже
 не отношусь к числу знатоков. Попытка сходу вникнуть в суть проекций
 и координатных систем чуть не довела до мигрени. Зато перед глазами
 пронеслись любопытные факты. Оказывается, Меркатор — это фамилия
 средневекового географа, составившего карты Европы, а привычное слово
 “атлас” — имя древнегреческого персонажа, которого боги обрекли
-держать небесный свод на плечах.</p>
-            <p class="p">Все это любопытно, но какое отношение имеет к Dakota? Дело в
+держать небесный свод на плечах.</p>            <p class="p">Все это любопытно, но какое отношение имеет к Dakota? Дело в
 том, что датум влияет на точность определения координат, как геодезических,
 измеряемых в градусах - минутах - секундах, так и километровых,
 отраженных на плоской прямоугольной сетке. Строго говоря, датум
@@ -148,8 +37,7 @@ E7407</samp>.</p>
 Но вся эта математика реализована внутри Dakota и знать ее незачем.
 Нас интересует конечный результат, который можно увидеть и пощупать.
 Он воплощен в цифрах на экране. Ради них мы и будем настраивать
-датум. Но сначала немного о проекциях.</p>
-            <p class="p">Когда-то географ Меркатор размышлял, как перенести очертания
+датум. Но сначала немного о проекциях.</p>            <p class="p">Когда-то географ Меркатор размышлял, как перенести очертания
 материков со сферической формы на бумагу, чтобы отмеченный на карте
 азимут можно было взять на компасе и попасть в нужную точку. Меркатор
 придумал такую модель. Уменьшенный до комнатных масштабов макет
@@ -159,16 +47,14 @@ E7407</samp>.</p>
 книги под названием атлас. Карты в такой проекции по сей день используются
 в авиации и морской навигации. Их недостаток в том, что линейные
 размеры сильно искажаются к краям карты. Зато точно выдерживаются
-азимуты на сколь угодно удаленные объекты.</p>
-            <p class="p">Большее распространение получили карты в проекции Universal Transverse
+азимуты на сколь угодно удаленные объекты.</p>            <p class="p">Большее распространение получили карты в проекции Universal Transverse
 Mercator (UTM). Ее отличие от предыдущей в том, что воображаемый
 цилиндр направлен не вдоль оси земли, а поперек. То есть, если ось
 земли идет сверху вниз, то цилиндр лежит на боку и соприкасается
 с землей по меридиану. Цилиндр поворачивают и через каждые 6° снимают проекцию
 поверхности в месте соприкосновения со сфероидом. Получается, что
 вся земля разделена на сектора по 6°, как апельсин на дольки, и
-поверхность каждого сектора проецируется на плоскость.</p>
-            <p class="p">Параллельно с картографией решалась задача о присвоении координат
+поверхность каждого сектора проецируется на плоскость.</p>            <p class="p">Параллельно с картографией решалась задача о присвоении координат
 каждой точке на планете и каждой точке на картах. Ее решали многие
 ученые по всему миру, включая и нашу страну. В 1984 году была принята
 мировая система координат World Geodetic System (WGS-84), которая
@@ -176,182 +62,90 @@ Mercator (UTM). Ее отличие от предыдущей в том, что 
 Земли, над землей или под землей (водой). Легко догадаться, что
 третим параметром точки является высота над поверхностью океана либо
 глубина. <em class="ph i">Если не настраивать датум, GPS-приемник показывает координаты
-именно в системе WGS-84</em>.</p>
-            <p class="p">В нашей стране и в других странах шли разработки собственных координатных
+именно в системе WGS-84</em>.</p>            <p class="p">В нашей стране и в других странах шли разработки собственных координатных
 систем, причем задолго до появления WGS-84. В результате были получены
 системы, которые охватывали локальные территории государств или
 даже весь земной шар и были смещены относительно друг-друга и относительно
 более поздней WGS-84. На основе национальных систем были проставлены
 координаты на национальных картах. Все бы ничего, но в век глобализации
 хочется прийти к единым стандартам, при этом не отказываясь от результатов
-титанического труда наших геодезистов и картографов. На помощь пришел датум.</p>
-            <p class="p">Датум служит для пересчета координат из какой-либо национальной
+титанического труда наших геодезистов и картографов. На помощь пришел датум.</p>            <p class="p">Датум служит для пересчета координат из какой-либо национальной
 системы в WGS-84 и обратно. По сути это набор корректирующих коэффициентов
-к общемировым координатам WGS-84.</p>
-            <div class="float-left">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="Insets/dakota/1513.gif" rel="cbgroup" title="">
-                        <img class="imagecenter" src="Insets/dakota/1513.gif">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">А зачем приводить общемировые координаты к национальной системе?
+к общемировым координатам WGS-84.</p>            <div class="float-left">              <table>                <tbody>                  <tr>                    <td>                      <a href="Insets/dakota/1513.gif" rel="cbgroup" title="">                        <img class="imagecenter" src="Insets/dakota/1513.gif">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">А зачем приводить общемировые координаты к национальной системе?
 Выше упоминалась задача ориентироваться по бумажным генштабовским
 картам. Для этого требуется знать текущее местоположение в координатах
 метрической сетки. По метрическим координатам легко найти точку
-на карте, в которой вы сейчас находитесь.</p>
-            <p class="p">Однако, прямоугольная сетка рассчитана на основе нашей национальной
+на карте, в которой вы сейчас находитесь.</p>            <p class="p">Однако, прямоугольная сетка рассчитана на основе нашей национальной
 градусной системы. Поэтому навигатор должен привести мировые координаты
 к национальной системе и уже затем рассчитать положение на метрической
 сетке. Наша национальная система называется Pulkovo-42 и также известна
 под именем СК-42. Принята она в 1942 году, а условный центр начала
-расчетов координат находится в районе Пулково.</p>
-            <p class="p">На рисунке слева показан экран навигатора Dakota. Булавка установлена
+расчетов координат находится в районе Пулково.</p>            <p class="p">На рисунке слева показан экран навигатора Dakota. Булавка установлена
 на пересечении линий прямоугольной сетки. Как можно видеть, точность
-определения метрических координат очень высока.</p></section>
-          <section class="section storySection">
-            <h2 class="title sectiontitle">Настройка Datum</h2>
-            <p class="p">Существуют два набора коэффициентов для пересчета координат из
+определения метрических координат очень высока.</p>          </section>          <section class="section storySection">            <h2 class="title sectiontitle">Настройка Datum</h2>            <p class="p">Существуют два набора коэффициентов для пересчета координат из
 WGS-84 в Pulkovo-42. Первый рекомендован агентством NIMA — подразделением
 американского министерства обороны, второй можно почерпнуть из ГОСТ
 51794-2001. Гостовский набор точнее на большей части России. Однако, коэффициенты
 NIMA усредненно более подходят для всей обширной территории планеты.
 Линейная разница при вычислении координат по NIMA и ГОСТ составляет
-от 16 до 20 м на территории России.</p>
-            <p class="p">Ниже на рисунках показаны значения по ГОСТ 51794-2001, в тексте
-также приведены значения NIMA.</p>
-            <div class="float-left">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="Insets/dakota/177.gif" rel="cbgroup" title="">
-                        <img class="imagecenter" src="Insets/dakota/177.gif">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">Чтобы задать датум в Dakota, перейдите в меню <strong class="ph b">Настройка</strong> &gt; <strong class="ph b">Формат коорд.</strong> &gt; <strong class="ph b">Датум
-					карты</strong> &gt; <strong class="ph b">User</strong> и введите коэффициенты:</p>
-            <p class="p"><strong class="ph b">DX</strong> = +00024m (NIMA +00028m)</p>
-            <p class="p"><strong class="ph b">DY</strong> = –00141m (NIMA –00130m)</p>
-            <p class="p"><strong class="ph b">DZ</strong> = –00081m (NIMA –00095m)</p>
-            <p class="p clearFloat"></p>
-            <p class="p">Указанные параметры задают смещение между центрами эллипсоидов
+от 16 до 20 м на территории России.</p>            <p class="p">Ниже на рисунках показаны значения по ГОСТ 51794-2001, в тексте
+также приведены значения NIMA.</p>            <div class="float-left">              <table>                <tbody>                  <tr>                    <td>                      <a href="Insets/dakota/177.gif" rel="cbgroup" title="">                        <img class="imagecenter" src="Insets/dakota/177.gif">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">Чтобы задать датум в Dakota, перейдите в меню <strong class="ph b">Настройка</strong> &gt; <strong class="ph b">Формат коорд.</strong> &gt; <strong class="ph b">Датум
+					карты</strong> &gt; <strong class="ph b">User</strong> и введите коэффициенты:</p>            <p class="p"><strong class="ph b">DX</strong> = +00024m (NIMA +00028m)</p>            <p class="p"><strong class="ph b">DY</strong> = –00141m (NIMA –00130m)</p>            <p class="p"><strong class="ph b">DZ</strong> = –00081m (NIMA –00095m)</p>            <p class="p clearFloat"></p>            <p class="p">Указанные параметры задают смещение между центрами эллипсоидов
 в системах WGS-84 и Pulkovo-42. Эллипсоиды — это математические
 модели Земли. Наша планета имеет форму не шара, а приплюснутой груши,
 эллипс точнее соответствует этой форме. Центры эллипсоидов обеих
 систем расположены в условном центре масс планеты, но с небольшим
 смещением. В системе Pulkovo-42 эллипсоид носит имя ученого Красовского, который
-вычислил его параметры.</p>
-            <div class="float-right">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="Insets/dakota/55.gif" rel="cbgroup" title="">
-                        <img class="imagecenter" src="Insets/dakota/55.gif">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p">Перейдите в меню <strong class="ph b">Настройка</strong> &gt; <strong class="ph b">Формат коорд.</strong> &gt; <strong class="ph b">Сфероид карты</strong> &gt; <strong class="ph b">User
-					Spheroid</strong> и введите еще два коэффициента (одинаковы для NIMA и ГОСТ):</p>
-            <p class="p"><strong class="ph b">DA</strong> = –00108m</p>
-            <p class="p"><strong class="ph b">DF</strong> = +0.00480795m</p>
-            <p class="p">Параметры <strong class="ph b">DA </strong>и <strong class="ph b">DF</strong> определяют разницу между формами эллипсоидов.
+вычислил его параметры.</p>            <div class="float-right">              <table>                <tbody>                  <tr>                    <td>                      <a href="Insets/dakota/55.gif" rel="cbgroup" title="">                        <img class="imagecenter" src="Insets/dakota/55.gif">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p">Перейдите в меню <strong class="ph b">Настройка</strong> &gt; <strong class="ph b">Формат коорд.</strong> &gt; <strong class="ph b">Сфероид карты</strong> &gt; <strong class="ph b">User
+					Spheroid</strong> и введите еще два коэффициента (одинаковы для NIMA и ГОСТ):</p>            <p class="p"><strong class="ph b">DA</strong> = –00108m</p>            <p class="p"><strong class="ph b">DF</strong> = +0.00480795m</p>            <p class="p">Параметры <strong class="ph b">DA </strong>и <strong class="ph b">DF</strong> определяют разницу между формами эллипсоидов.
 Параметр <strong class="ph b">DA</strong> показывает разницу между длинами больших полуосей,
-а <strong class="ph b">DF</strong> — разницу между коэффициентами сжатия. </p>
-            <div class="note note"><img src="images/note.gif"> Истинное значение <strong class="ph b">DF</strong> это 4,80795х10<sup class="ph sup">-7</sup>, но
-чаще значение приводят умноженным на 10<sup class="ph sup">4</sup>.</div>
-            <p class="p">Теперь нужно задать параметры для пересчета угловых координат
+а <strong class="ph b">DF</strong> — разницу между коэффициентами сжатия. </p>            <div class="note note note_note"><span class="note__title notetitle">Прим.:</span> Истинное значение <strong class="ph b">DF</strong> это 4,80795х10<sup class="ph sup">-7</sup>, но
+чаще значение приводят умноженным на 10<sup class="ph sup">4</sup>.</div>            <p class="p">Теперь нужно задать параметры для пересчета угловых координат
 в прямоугольные. Для этого перейдите в меню <strong class="ph b">Настройка</strong> &gt; <strong class="ph b">Формат
 коорд.</strong> &gt; <strong class="ph b">Формат коорд.</strong> &gt; <strong class="ph b">Сетка пользователя</strong> &gt; <strong class="ph b">UTM</strong> и
-введите параметры:</p>
-            <div class="float-left">
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <a href="Insets/dakota/70.gif" rel="cbgroup" title="">
-                        <img class="imagecenter" src="Insets/dakota/70.gif">
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="p"><strong class="ph b">Усл. смещение по долготе</strong> = 7500000.0m (см. пояснение ниже)</p>
-            <p class="p"><strong class="ph b">Усл. смещение по широте</strong> = 0.0m</p>
-            <p class="p"><strong class="ph b">Масштаб</strong> = 1.0000000</p>
-            <p class="p"><strong class="ph b">Начало отсчета долготы</strong> = 39°00.000’ (для Москвы)</p>
-            <p class="p"><strong class="ph b">Исходная широта</strong> = 00°00.000’</p>
-            <p class="p clearFloat"></p>
-            <p class="p">Теперь можно получать местоположение в координатах прямоугольной
+введите параметры:</p>            <div class="float-left">              <table>                <tbody>                  <tr>                    <td>                      <a href="Insets/dakota/70.gif" rel="cbgroup" title="">                        <img class="imagecenter" src="Insets/dakota/70.gif">                      </a>                    </td>                  </tr>                </tbody>              </table>            </div>            <p class="p"><strong class="ph b">Усл. смещение по долготе</strong> = 7500000.0m (см. пояснение ниже)</p>            <p class="p"><strong class="ph b">Усл. смещение по широте</strong> = 0.0m</p>            <p class="p"><strong class="ph b">Масштаб</strong> = 1.0000000</p>            <p class="p"><strong class="ph b">Начало отсчета долготы</strong> = 39°00.000’ (для Москвы)</p>            <p class="p"><strong class="ph b">Исходная широта</strong> = 00°00.000’</p>            <p class="p clearFloat"></p>            <p class="p">Теперь можно получать местоположение в координатах прямоугольной
 сетки генштабовских карт. Только помните, что при переходе в другую
 зону (другой шестиградусный сектор), потребуется изменить координату
 центрального меридиана зоны. Для Москвы она равна 39°, а, скажем,
-для Петербурга — 33°, а для Выборга — 27°.</p>
-            <p class="p">Узнать центральный меридиан зоны можно по индексу листа генштабовской
+для Петербурга — 33°, а для Выборга — 27°.</p>            <p class="p">Узнать центральный меридиан зоны можно по индексу листа генштабовской
 карты. Индекс включает букву и число, например N-37. Здесь число
 37 — номер зоны. Если обозначить его через X, то формула центрального
-меридиана зоны будет такой</p>
-            <pre class="pre codeblock">
+меридиана зоны будет такой</p>            <pre class="pre codeblock">              <code>
 (X - 30) * 6 - 3
-</pre>
-            <p class="p">Вот пример вычисления центрального меридиана зоны, в которой
-расположена Москва</p>
-            <pre class="pre codeblock">
+</code>            </pre>            <p class="p">Вот пример вычисления центрального меридиана зоны, в которой
+расположена Москва</p>            <pre class="pre codeblock">              <code>
 (37 - 30) * 6 - 3 = 39°
-</pre>
-            <p class="p">Также номера зон можно узнать из этой <a class="xref" href="http://teux.ru/Insets/wmap.jpg" target="_blank">карты-схемы</a>.
+</code>            </pre>            <p class="p">Также номера зон можно узнать из этой <a class="xref" href="http://teux.ru/Insets/wmap.jpg" target="_blank">карты-схемы</a>.
 Карта разделена по вертикали на зоны: один столбец — одна зона. Номера
-зон приведены над столбцами.</p>
-            <p class="p">И еще замечание касается параметра <strong class="ph b">Усл. смещение по долготе</strong>.
+зон приведены над столбцами.</p>            <p class="p">И еще замечание касается параметра <strong class="ph b">Усл. смещение по долготе</strong>.
 У меня он равен 7500000. Часто в сети встречается значение 500000.
 Оно правильное, как правильно и 4500000 и 9500000. Главное, чтобы
 значение было кратно 500000. Условное смещение просто прибавляется
-к метрической координате долготы после ее расчета. Для чего, рассказывается дальше.</p>
-            <p class="p">Каждая зона имеет собственную прямоугольную сетку, начало которой
+к метрической координате долготы после ее расчета. Для чего, рассказывается дальше.</p>            <p class="p">Каждая зона имеет собственную прямоугольную сетку, начало которой
 находится на пересечении центрального меридиана зоны с экватором.
 Правее этого меридиана долгота точек выражается положительными числами,
 левее — отрицательными. Чтобы сделать все долготы положительными,
 ввели постоянную поправку — 500000&nbsp;м, или 500 км. Она просто
 прибавляется к долготе каждой точки. Даже самые левоудаленные точки
 зоны ближе к центральному меридиану, чем 500 км, поэтому и их долготы
-выражаются положительными числами.</p>
-            <p class="p">Но что происходит, если картами нужно покрыть несколько зон?
+выражаются положительными числами.</p>            <p class="p">Но что происходит, если картами нужно покрыть несколько зон?
 Поскольку у каждой зоны независимая прямоугольная сетка, точки в
 разных зонах имеют одинаковые долготы. Чтобы этого не было, на генштабовских
 картах в разных зонах применяются разные условные смещения по долготе.
 Смещения увеличиваются от зоны к зоне с запада на восток. Таким образом
-в разных зонах исключаются одинаковые значения долготы.</p>
-            <p class="p">Вверху страницы есть фрагмент карты с вертикальной линией сетки <sup class="ph sup">74</sup>07,
+в разных зонах исключаются одинаковые значения долготы.</p>            <p class="p">Вверху страницы есть фрагмент карты с вертикальной линией сетки <sup class="ph sup">74</sup>07,
 что означает координату 7407000 метров. Если задать в Dakota условное
 смещение по долготе равное 500000, навигатор выдаст координату E0407000,
 то есть не покажет семерку в старшем разряде. Если же задать смещение
 7500000 м, будет показана координата E7407000, которая полностью соответствует
-генштабовской. Такую координату удобнее искать на карте.</p>
-            <p class="p">Однако, есть ограничения. В Dakota нельзя задать условное смещение
+генштабовской. Такую координату удобнее искать на карте.</p>            <p class="p">Однако, есть ограничения. В Dakota нельзя задать условное смещение
 еще больше на порядок, хотя на генштабовских картах соответствующие
 координаты встречаются. Например, в районе Абакана вертикальные
 линии имеют обозначения <sup class="ph sup">163</sup>72 и т.п. Хотелось бы задать
 в Dakota смещение 16500000, но увы, навигатор перестанет показывать
 координаты. Для такого листа можно задать смещение 6500000. Тогда
 координата определится как E6372000, то есть старшей единички не
-будет. Но все же это удобнее для поиска координаты на карте.</p></section></div>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
+будет. Но все же это удобнее для поиска координаты на карте.</p>          </section>        </div>        <div id="disqus_thread"></div>        <script type="text/javascript">
                                 var disqus_shortname = "teux",
                                     disqus_identifier = "dakota.datum",
                                     disqus_url = "http://www.teux.ru/dakota.datum.html";
@@ -360,25 +154,4 @@ NIMA усредненно более подходят для всей обшир
                                 dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
                                 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                                 })();
-                            </script>
-      </div>
-      <div id="navigation_supplemental">
-        <h3>Quick Navigation</h3>
-        <ul id="quick_links"></ul>
-        <h3>Language Links</h3>
-        <ul id="inner_navigation">
-          <li class="first">
-            <strong>Вперед:</strong>
-            <a href="dakota.maps.html">Растровые карты</a>
-          </li>
-          <li><strong>Назад:</strong>нет</li>
-          <li class="last">
-            <strong>Вверх:</strong>
-            <a href="dakota.html">Garmin Dakota 20</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>
-  </body>
-</html>
+                            </script>      </div>      <div id="navigation_supplemental">        <h3>Quick Navigation</h3>        <ul id="quick_links"></ul>        <h3>Language Links</h3>        <ul id="inner_navigation">          <li class="first">            <strong>Вперед:</strong>            <a href="dakota.maps.html">Растровые карты</a>          </li>          <li><strong>Назад:</strong>нет</li>          <li class="last">            <strong>Вверх:</strong>            <a href="dakota.html">Garmin Dakota 20</a>          </li>        </ul>      </div>    </div>    <script>if (navigator.appName.indexOf('Microsoft')==-1 && window.jstree) window.jstree.OpenTreeNode(window.pageid);</script>  </body></html>
