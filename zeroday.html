@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .inline {
+            display: inline-block;
+        }
+        .group {
+            font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin-left: 6px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    (function () {
+        var elem = document.createElement('canvas');
+        var isCanvas = !!(elem.getContext && elem.getContext('2d'));
+        var groupElem;
+        var inputElem;
+
+        var checkGroup = function (val) {
+            var group;
+
+            if (val[0] === '1') {
+                group = 'a';
+            } else if (/^3[26]/.test(val)) {
+                group = 'b';
+            } else if (/^3\d/.test(val)) {
+                group = 'c';
+            } else {
+                group = 'd';
+            }
+
+            groupElem.innerHTML = 'group ' + group;
+        };
+
+        var onUserInput = function (e) {
+            checkGroup(e.currentTarget.value)
+        };
+
+        document.write(
+            '<form>' +
+            '<input name="canvas" type="hidden" value="' + +isCanvas + '" />' +
+            '<input name="usr" class="inline usr-input" type="text" value="32" />' +
+            '<div class="inline group"></div>' +
+            '</form>'
+        );
+
+        groupElem = document.getElementsByClassName('group')[0];
+        inputElem = document.getElementsByClassName('usr-input')[0];
+        inputElem.addEventListener('input', onUserInput, false);
+        inputElem.addEventListener('blur', onUserInput, false);
+        inputElem.addEventListener('paste', onUserInput, false);
+        inputElem.addEventListener('cut', onUserInput, false);
+
+        checkGroup(inputElem.value);
+    })();
+
+</script>
+</body>
+</html>

@@ -44,7 +44,8 @@ menu4ent[1]='<a href="pvd190909.html">ПВД по болотам</a>';
 menu4ent[2]='<a href="pvd071109.html">ПВД “Первый снег”</a>';
 menu4ent[3]='<a href="pvd141109.html">Ночной ПВД</a>';
 menu4ent[4]='<a href="mmb10.html">ММБ 2010</a>';
-menu4ent[5]='<a href="kamchatka.html">Камчатка (план)</a>';
+menu4ent[5]='<a href="kamchatka.html">Камчатка 2016</a>';
+menu4ent[6]='<a href="kamchatka-afoot.html">Маршруты камчатки</a>';
 
 //Menu entries for skiing.dita
 var menu5ent=new Array();

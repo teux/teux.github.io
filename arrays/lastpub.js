@@ -2,7 +2,7 @@ document.write('<div id="last-published">');
 document.write('  <h3>Последние публикации:</h3>');
 document.write('  <ul>');
 document.write('	<li class="first"><img src="images/newpub.gif" width="32" height="32"/>');
-document.write('	  <a href="kamchatka.html">Камчатка (план)</a><br/>1.1.2016</li>');
+document.write('	  <a href="kamchatka.html">Камчатка 2016</a><br/>1.1.2016</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');
 document.write('	  <a href="rybachiy.html">Рыбачий</a><br/>20.8.2015</li>');
 document.write('	<li><img src="images/newpub.gif" width="32" height="32"/>');

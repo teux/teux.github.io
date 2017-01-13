@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ZeroDay test</title>
+</head>
+<body>
+<script src="https://rawgit.com/ricmoo/aes-js/master/index.js"></script>
+<script>
+    (function (lconv) {
+        let data = {
+            some: 'some',
+            json: 'json',
+            'with': true,
+            keys: 4,
+            utf: 'значение',
+        };
+
+        let dataBytes = aesjs.util.convertStringToBytes(JSON.stringify(data));
+        // must be multiple of 16 bytes
+        while (dataBytes.length % 16) {
+            dataBytes.push(32);
+        }
+
+        let key = [];
+        for (let i = 0; i < 32; i += 1) {
+            key[i] = Math.round(Math.random() * 255);
+        }
+        let iv = lconv.toByteArray('a764f9e63d8f2a82c15c89e7c85cf0af');
+        let aesCbc = new aesjs.ModeOfOperation.cbc(key, iv);
+
+        let dataCbc = aesCbc.encrypt(dataBytes);
+        let body = lconv.toHexString(dataCbc);
+
+        // header
+        let headers = new Headers();
+        headers.append('aeskey', lconv.toHexString(key));
+
+        // send fake request
+        fetch('/rest-api', {
+            method: 'POST',
+            headers,
+            body,
+        });
+    })({
+        /**
+         * Converts binary array to hex string.
+         * @param {Array} array
+         * @returns {String}
+         */
+        toHexString: (array) => array.map(function(byte) {
+            return ('0' + (byte & 0xFF).toString(16)).slice(-2);
+        }).join(''),
+
+        /**
+         * Pars hex string to binary array.
+         * @param {String} str
+         * @returns {Array}
+         */
+        toByteArray: (str) => {
+            let result = [];
+
+            while (str.length >= 2) {
+                result.push(parseInt(str.substring(0, 2), 16));
+                str = str.substring(2, str.length);
+            }
+            return result;
+        },
+    });
+</script>
+</body>
+</html>
