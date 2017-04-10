@@ -1,0 +1,124 @@
+.container {
+    width: 1650px;
+    height: 364px;
+    position: relative;
+    margin-top: -615px;
+    margin-left: -266px;
+    border: none;
+    perspective: 749px;
+    perspective-origin: 934px 1002px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ( -1360px );
+}
+
+figure {
+    display: block;
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border: 1px solid black;
+    line-height: 196px;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.back,
+.right.wall {
+    background-color: #eaffd8;
+}
+.left, .right.rigel {
+    background-color: #5f6c5f;
+}
+.top {
+    background-color: #fff8eb;
+}
+.bottom {
+    background: url(https://planner5d.com/m/t/laminate_0_1_3.jpg);
+    background-size: 370px;
+}
+.window {
+    position: relative;
+    background: url(http://www.intexokna.ru/images/productions/windows/windows/t-section/2Fbig.jpg);
+    height: 1200px;
+}
+
+.back {
+    transform: rotateX( -180deg ) translateZ( 1000px );
+}
+
+.back .blind-left,
+.back .blind-right {
+    transform: rotateX( -180deg ) translateZ( 999px ) translateY(1980px) translateX(-50px);
+    height: 1980px;
+    width: 900px;
+    background-size: 900px 1980px;
+    border: none;
+}
+.back .blind-right {
+    transform: rotateX( -180deg ) translateZ( 999px ) translateY(1980px) translateX(1100px);
+}
+
+.back .window {
+    width: 1000px;
+    margin-top: 525px;
+    margin-left: 581px;
+    background-size: 1000px 1228px;
+    transform: rotateX(180deg);
+}
+.left .window {
+    width: 400px;
+    margin-top: 255px;
+    margin-left: 1459px;
+    background-size: 449px 1195px;
+}
+
+.left .blind-left,
+.left .blind-right {
+    height: 1980px;
+    width: 400px;
+    margin-top: -1537px;
+    margin-left: 1600px;
+    background-size: 400px 1980px;
+    border: none;
+}
+.left .blind-right {
+    margin-left: 1124px;
+}
+
+.right, .right.wall {
+    transform: rotateY(90deg ) translateZ( 1000px );
+}
+.right.rigel {
+    height: 445px;
+    border-bottom: 25px solid #464646;
+}
+.right.wall {
+    height: 1539px;
+    transform: rotateY(90deg) translateY(472px) translateZ(1000px);
+}
+.right.wall .door{
+    height: 1393px;
+    width: 250px;
+    margin-top: 141px;
+    margin-left: 100px;
+    background: url(http://td-harmony.ru/images/products/f7/77/product_add_pic_7290.jpg);
+    background-size: 258px 1428px;
+    transform: rotateY(180deg);
+}
+.left {
+    transform: rotateY(  -90deg ) translateZ( 1000px );
+}
+.top {
+    transform: rotateX(90deg) translateZ( 1000px );
+}
+.bottom {
+    transform: rotateX(-90deg) rotateZ(90deg) translateY(1px) translateZ(1000px);
+}
